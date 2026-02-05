@@ -2,6 +2,46 @@
 
 **Last Updated:** 2026-02-05
 **Status:** Phase 1 COMPLETE ✅ | Phase 2 COMPLETE ✅ | Phase 3 COMPLETE ✅ | Phase 4 COMPLETE ✅ | Phase 5 COMPLETE ✅
+**Version:** v0.1 (Released Feb 2026)
+
+---
+
+## 🎉 v0.1 Release Complete
+
+All 30 skills complete and restructured to comply with Anthropic's official skills format.
+
+**Major Structural Change (Feb 5, 2026):**
+- Restructured from TYPE-based directories to flat skill-name directories
+- All skill files renamed from `name.md` to `SKILL.md`
+- Added YAML frontmatter to every skill (name, description, type)
+- Updated all documentation to reflect new structure
+
+**Old Structure:**
+```
+skills/
+├── components/user-story.md
+├── interactive/positioning-workshop.md
+└── workflows/product-strategy-session.md
+```
+
+**New Structure (Anthropic-Compliant):**
+```
+skills/
+├── user-story/SKILL.md
+├── positioning-workshop/SKILL.md
+└── product-strategy-session/SKILL.md
+```
+
+**Each SKILL.md includes:**
+```yaml
+---
+name: skill-name
+description: Brief description
+type: component|interactive|workflow
+---
+```
+
+This enables compatibility with `~/.claude/skills/` directory and standard Anthropic skills tooling.
 
 ---
 
