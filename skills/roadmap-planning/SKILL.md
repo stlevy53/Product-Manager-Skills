@@ -67,6 +67,8 @@ Roadmap planning is the process of:
 
 ## Application
 
+Use `template.md` for the full fill-in structure.
+
 This workflow orchestrates **5 phases** over **1-2 weeks**, using multiple component and interactive skills.
 
 ---
@@ -87,7 +89,7 @@ This workflow orchestrates **5 phases** over **1-2 weeks**, using multiple compo
 
 **2. Review Customer Problems (Discovery Insights)**
 - **Source:** Discovery interviews, support tickets, NPS feedback, churn surveys
-- **Use:** Insights from `discovery-process.md` (if recently completed)
+- **Use:** Insights from `skills/discovery-process/SKILL.md` (if recently completed)
 - **Questions:**
   - What are the top 3-5 customer pain points?
   - Which problems affect the most customers?
@@ -126,7 +128,7 @@ This workflow orchestrates **5 phases** over **1-2 weeks**, using multiple compo
 ### Activities
 
 **1. Define Epic Hypotheses**
-- **Use:** `epic-hypothesis.md` (component)
+- **Use:** `skills/epic-hypothesis/SKILL.md` (component)
 - **For each initiative:** Write hypothesis statement
 - **Format:** "We believe that [building X] for [persona] will achieve [outcome] because [assumption]."
 - **Participants:** PM
@@ -186,7 +188,7 @@ Target: 5% → 20%
 ### Activities
 
 **1. Choose Prioritization Framework**
-- **Use:** `prioritization-advisor.md` (interactive)
+- **Use:** `skills/prioritization-advisor/SKILL.md` (interactive)
 - **Participants:** PM
 - **Duration:** 30 minutes
 - **Output:** Recommended framework (RICE, ICE, Value/Effort, etc.)
@@ -353,12 +355,12 @@ Week 1:
 │  └─ Review stakeholder requests
 │
 ├─ Day 3-4: Define Initiatives (Epics)
-│  ├─ epic-hypothesis.md (60 min per epic)
+│  ├─ skills/epic-hypothesis/SKILL.md (60 min per epic)
 │  ├─ Estimate effort (90 min)
 │  └─ Map to business outcomes
 │
 ├─ Day 5: Prioritize Initiatives
-│  ├─ prioritization-advisor.md (30 min)
+│  ├─ skills/prioritization-advisor/SKILL.md (30 min)
 │  ├─ Score epics (120 min)
 │  └─ Adjust for strategic fit
 │
@@ -384,66 +386,15 @@ Week 2:
 
 ## Examples
 
-### Example 1: Good Roadmap Planning (SaaS Product)
+See `examples/sample.md` for full roadmap examples.
 
-**Context:** Annual planning, need to align roadmap with retention and enterprise expansion goals.
+Mini example excerpt:
 
-**Phase 1 - Gather Inputs:**
-- Business goals: Reduce churn from 15% to 8%, increase enterprise deals from 2/quarter to 5/quarter
-- Customer problems: Onboarding confusion, enterprise SSO gap, mobile access issues
-- Technical: Need to upgrade data pipeline for advanced reporting
-
-**Phase 2 - Define Epics:**
-- Wrote 12 epics with hypotheses (guided onboarding, enterprise SSO, mobile workflows, advanced reporting, etc.)
-- Estimated effort: Onboarding = M (3 weeks), SSO = M (4 weeks), Mobile = L (2 months)
-
-**Phase 3 - Prioritize:**
-- Used RICE framework (recommended by `prioritization-advisor.md`)
-- Scored: Onboarding (24,000), SSO (675), Mobile (2,000), Reporting (1,000)
-- Strategic override: Boosted SSO priority (critical for enterprise expansion)
-
-**Phase 4 - Sequence:**
-- Q1: Guided Onboarding, Enterprise SSO, Mobile Workflows
-- Q2: Advanced Reporting (depends on Data Pipeline in Q1), Slack Integration
-- Q3: Mobile App (depends on API Redesign)
-
-**Phase 5 - Communicate:**
-- Presented to execs: "Q1 focuses on retention (onboarding) and enterprise expansion (SSO)"
-- Feedback: "Can we add pricing page redesign to Q2?" → Adjusted roadmap
-- Published: Internal roadmap (Confluence), external roadmap (Now/Next/Later)
-
-**Outcome:** Clear, aligned roadmap with strategic narrative.
-
----
-
-### Example 2: Bad Roadmap Planning (Feature List)
-
-**Context:** PM creates roadmap alone, based on stakeholder requests.
-
-**Phase 1 - Gather Inputs:** Skipped (no business goals reviewed)
-
-**Phase 2 - Define Epics:** Listed features requested by sales, marketing, CS
-
-**Phase 3 - Prioritize:** Prioritized by "who shouted loudest"
-
-**Phase 4 - Sequence:** Threw features into Q1, Q2, Q3 with no rationale
-
-**Phase 5 - Communicate:** Presented feature list to execs
-
-**Why this failed:**
-- No strategic narrative ("Why are we building this?")
-- No customer problems framed
-- No hypotheses or success metrics
-- Roadmap felt like random feature list
-
-**Fix with roadmap planning workflow:**
-- **Phase 1:** Review business goals (reduce churn, increase enterprise)
-- **Phase 2:** Turn feature requests into epics with hypotheses
-- **Phase 3:** Prioritize by RICE (impact + effort), not politics
-- **Phase 4:** Sequence logically by dependencies, business goals
-- **Phase 5:** Present with narrative: "Q1 = Retention, Q2 = Enterprise Expansion"
-
----
+```markdown
+Now: Guided onboarding (activation +20%)
+Next: Enterprise SSO (deal velocity)
+Later: Mobile workflows (DAU lift)
+```
 
 ## Common Pitfalls
 
@@ -497,10 +448,10 @@ Week 2:
 ### Related Skills (Orchestrated by This Workflow)
 
 **Phase 2:**
-- `epic-hypothesis.md` (component)
+- `skills/epic-hypothesis/SKILL.md` (component)
 
 **Phase 3:**
-- `prioritization-advisor.md` (interactive)
+- `skills/prioritization-advisor/SKILL.md` (interactive)
 
 **Phase 4:**
 - (Dependencies mapped manually, no specific skill)
@@ -509,9 +460,9 @@ Week 2:
 - (Presentation created manually, no specific skill)
 
 **Optional/Related:**
-- `product-strategy-session.md` (workflow) — Run before roadmap planning to establish strategy
-- `discovery-process.md` (workflow) — Provides customer problem inputs for Phase 1
-- `user-story-mapping-workshop.md` (interactive) — For complex epics requiring release planning
+- `skills/product-strategy-session/SKILL.md` (workflow) — Run before roadmap planning to establish strategy
+- `skills/discovery-process/SKILL.md` (workflow) — Provides customer problem inputs for Phase 1
+- `skills/user-story-mapping-workshop/SKILL.md` (interactive) — For complex epics requiring release planning
 
 ### External Frameworks
 - Bruce McCarthy, *Product Roadmaps Relaunched* (2017) — Outcome-driven roadmaps
@@ -526,4 +477,4 @@ Week 2:
 **Skill type:** Workflow
 **Suggested filename:** `roadmap-planning.md`
 **Suggested placement:** `/skills/workflows/`
-**Dependencies:** Orchestrates `epic-hypothesis.md`, `prioritization-advisor.md`, plus manual activities
+**Dependencies:** Orchestrates `skills/epic-hypothesis/SKILL.md`, `skills/prioritization-advisor/SKILL.md`, plus manual activities

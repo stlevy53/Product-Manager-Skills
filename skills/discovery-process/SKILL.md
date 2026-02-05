@@ -49,6 +49,8 @@ The discovery process (Teresa Torres, Marty Cagan) is a structured approach to e
 
 ## Application
 
+Use `template.md` for the full fill-in structure.
+
 This workflow orchestrates **6 phases** over **2-4 weeks**, using multiple component and interactive skills.
 
 ---
@@ -60,25 +62,25 @@ This workflow orchestrates **6 phases** over **2-4 weeks**, using multiple compo
 ### Activities
 
 **1. Run Problem Framing Canvas**
-- **Use:** `problem-framing-canvas.md` (interactive - MITRE)
+- **Use:** `skills/problem-framing-canvas/SKILL.md` (interactive - MITRE)
 - **Participants:** PM, design, engineering lead
 - **Duration:** 120 minutes
 - **Output:** Problem statement + "How Might We" question
 
 **2. Create Formal Problem Statement**
-- **Use:** `problem-statement.md` (component)
+- **Use:** `skills/problem-statement/SKILL.md` (component)
 - **Participants:** PM
 - **Duration:** 30 minutes
 - **Output:** Structured problem statement with hypothesis
 
 **3. Define Proto-Personas (If Needed)**
-- **Use:** `proto-persona.md` (component)
+- **Use:** `skills/proto-persona/SKILL.md` (component)
 - **When:** If target customer segment is unclear
 - **Duration:** 60 minutes
 - **Output:** Hypothesis-driven personas
 
 **4. Map Jobs-to-be-Done (If Needed)**
-- **Use:** `jobs-to-be-done.md` (component)
+- **Use:** `skills/jobs-to-be-done/SKILL.md` (component)
 - **When:** If customer motivations are unclear
 - **Duration:** 60 minutes
 - **Output:** JTBD statements
@@ -108,7 +110,7 @@ This workflow orchestrates **6 phases** over **2-4 weeks**, using multiple compo
 ### Activities
 
 **1. Prep Discovery Interviews**
-- **Use:** `discovery-interview-prep.md` (interactive)
+- **Use:** `skills/discovery-interview-prep/SKILL.md` (interactive)
 - **Participants:** PM, design
 - **Duration:** 90 minutes
 - **Output:** Interview plan with methodology, questions, biases to avoid
@@ -143,7 +145,7 @@ This workflow orchestrates **6 phases** over **2-4 weeks**, using multiple compo
 ### Activities
 
 **1. Conduct Discovery Interviews**
-- **Methodology:** From `discovery-interview-prep.md` (Problem validation, JTBD, switch interviews, etc.)
+- **Methodology:** From `skills/discovery-interview-prep/SKILL.md` (Problem validation, JTBD, switch interviews, etc.)
 - **Participants:** PM + optional observer (design, eng)
 - **Duration:** 5-10 interviews over 1-2 weeks
 - **Focus areas:**
@@ -200,7 +202,7 @@ This workflow orchestrates **6 phases** over **2-4 weeks**, using multiple compo
 - **Output:** Themed clusters with frequency counts
 
 **2. Create Customer Journey Map (Optional)**
-- **Use:** `customer-journey-mapping-workshop.md` (interactive)
+- **Use:** `skills/customer-journey-mapping-workshop/SKILL.md` (interactive)
 - **When:** If pain points span multiple phases (discover, try, buy, use, support)
 - **Duration:** 90 minutes
 - **Output:** Journey map with opportunities ranked by impact
@@ -214,7 +216,7 @@ This workflow orchestrates **6 phases** over **2-4 weeks**, using multiple compo
 - **Output:** Ranked list of top 3-5 pain points to address
 
 **4. Update Problem Statement**
-- **Use:** `problem-statement.md` (component)
+- **Use:** `skills/problem-statement/SKILL.md` (component)
 - **Refine based on research:** Did initial hypothesis hold? Adjust if needed.
 - **Output:** Validated problem statement
 
@@ -234,14 +236,14 @@ This workflow orchestrates **6 phases** over **2-4 weeks**, using multiple compo
 ### Activities
 
 **1. Generate Opportunity Solution Tree**
-- **Use:** `opportunity-solution-tree.md` (interactive)
+- **Use:** `skills/opportunity-solution-tree/SKILL.md` (interactive)
 - **Input:** Top 3 pain points from Phase 4
 - **Participants:** PM, design, engineering lead
 - **Duration:** 90 minutes
 - **Output:** 3 opportunities, 3 solutions per opportunity, POC recommendation
 
 **Alternative: Use Lean UX Canvas**
-- **Use:** `lean-ux-canvas.md` (interactive)
+- **Use:** `skills/lean-ux-canvas/SKILL.md` (interactive)
 - **When:** Prefer hypothesis-driven approach over OST
 - **Output:** Hypotheses to test, minimal experiments
 
@@ -294,13 +296,13 @@ This workflow orchestrates **6 phases** over **2-4 weeks**, using multiple compo
   - **KILL:** De-prioritize, not worth solving now
 
 **2. Define Epic Hypotheses (If GO)**
-- **Use:** `epic-hypothesis.md` (component)
+- **Use:** `skills/epic-hypothesis/SKILL.md` (component)
 - **Participants:** PM
 - **Duration:** 60 minutes per epic
 - **Output:** Epic hypothesis statement with success criteria
 
 **3. Write PRD (If GO)**
-- **Use:** `prd-development.md` (workflow)
+- **Use:** `skills/prd-development/SKILL.md` (workflow)
 - **Participants:** PM
 - **Duration:** 1-2 days
 - **Output:** Structured PRD with problem, solution, success metrics
@@ -327,12 +329,12 @@ This workflow orchestrates **6 phases** over **2-4 weeks**, using multiple compo
 ```
 Week 1:
 ├─ Day 1-2: Frame the Problem
-│  ├─ problem-framing-canvas.md (120 min)
-│  ├─ problem-statement.md (30 min)
-│  └─ [Optional] proto-persona.md, jobs-to-be-done.md
+│  ├─ skills/problem-framing-canvas/SKILL.md (120 min)
+│  ├─ skills/problem-statement/SKILL.md (30 min)
+│  └─ [Optional] skills/proto-persona/SKILL.md, skills/jobs-to-be-done/SKILL.md
 │
 ├─ Day 3: Research Planning
-│  ├─ discovery-interview-prep.md (90 min)
+│  ├─ skills/discovery-interview-prep/SKILL.md (90 min)
 │  ├─ Recruit participants (2-3 days)
 │  └─ Schedule 5-10 interviews
 │
@@ -345,7 +347,7 @@ Week 2:
 │
 ├─ Day 4-5: Synthesize Insights
 │  ├─ Affinity mapping (120 min)
-│  ├─ [Optional] customer-journey-mapping-workshop.md (90 min)
+│  ├─ [Optional] skills/customer-journey-mapping-workshop/SKILL.md (90 min)
 │  ├─ Prioritize pain points
 │  └─ Update problem statement
 │
@@ -353,7 +355,7 @@ Week 2:
 
 Week 3:
 ├─ Day 1-2: Generate & Validate Solutions
-│  ├─ opportunity-solution-tree.md (90 min)
+│  ├─ skills/opportunity-solution-tree/SKILL.md (90 min)
 │  └─ Design experiments
 │
 ├─ Day 3-5: Run Experiments
@@ -365,8 +367,8 @@ Week 3:
 Week 4:
 └─ Decide & Document
    ├─ Make GO/NO-GO decision
-   ├─ [If GO] epic-hypothesis.md (60 min per epic)
-   ├─ [If GO] prd-development.md (1-2 days)
+   ├─ [If GO] skills/epic-hypothesis/SKILL.md (60 min per epic)
+   ├─ [If GO] skills/prd-development/SKILL.md (1-2 days)
    └─ Communicate findings (30 min readout)
 ```
 
@@ -379,64 +381,15 @@ Week 4:
 
 ## Examples
 
-### Example 1: Good Discovery Process (SaaS Retention Problem)
+See `examples/sample.md` for a full discovery process example.
 
-**Context:** SaaS product with 15% monthly churn, hypothesis = onboarding problem.
+Mini example excerpt:
 
-**Phase 1 - Frame Problem:**
-- Ran `problem-framing-canvas.md`: Problem = "Users abandon onboarding due to lack of guidance"
-- Problem statement: "60% of non-technical users drop off in first 24 hours"
-
-**Phase 2 - Research Planning:**
-- Ran `discovery-interview-prep.md`: Chose "switch interviews" (users who churned)
-- Recruited 10 churned customers (last 30 days)
-
-**Phase 3 - Conduct Research:**
-- Interviewed 10 churned customers
-- Asked: "Walk me through your first experience with the product. Where did you get stuck?"
-- Pattern emerged after 6 interviews: Same pain point (empty dashboard, unclear next step)
-
-**Phase 4 - Synthesize:**
-- Affinity mapping: 8/10 mentioned "didn't know what to do first"
-- Customer quote: "I logged in, saw an empty dashboard, and thought 'now what?'"
-- Pain point: "Lack of onboarding guidance" (frequency: 8/10, intensity: HIGH)
-
-**Phase 5 - Generate Solutions:**
-- Ran `opportunity-solution-tree.md`: 3 solutions (guided checklist, tooltips, human onboarding)
-- Experiment: Figma prototype of guided checklist, tested with 10 new signups
-- Result: 9/10 completed first action with checklist (vs. 4/10 without)
-
-**Phase 6 - Decide:**
-- Decision: GO (validated problem + solution)
-- Wrote epic hypothesis: "If we add guided onboarding checklist, activation rate will increase from 40% to 60%"
-- Moved to roadmap (Q1 priority)
-
-**Outcome:** 4 weeks, validated problem/solution, high confidence in build decision.
-
----
-
-### Example 2: Bad Discovery Process (Jumped to Solution)
-
-**Context:** Product team wants to build mobile app.
-
-**Phase 1 - Frame Problem:** Skipped (assumed problem = "need mobile app")
-
-**Phase 2-3 - Research:** Skipped (no customer interviews)
-
-**Phase 5 - Generate Solutions:** Skipped (already decided on solution)
-
-**Phase 6 - Decide:** GO (no validation)
-
-**Outcome:** Built mobile app over 6 months, low adoption, discovered later that responsive web would've solved 80% of use cases in 2 weeks.
-
-**Fix with discovery process:**
-- **Phase 1:** Frame problem: "Mobile-first users can't complete workflows on the go"
-- **Phase 3:** Interview 10 mobile-first users: "What workflows do you need mobile access for?"
-- **Phase 4:** Insight = Users only need 2-3 core workflows on mobile (not full app)
-- **Phase 5:** Test responsive web + mobile-optimized flows (2-week experiment)
-- **Phase 6:** Result = Responsive web solved problem, saved 5 months dev time
-
----
+```markdown
+**Problem:** Onboarding drop-off due to jargon
+**Insight:** 6/10 users quit at step 3
+**Decision:** Go with guided checklist experiment
+```
 
 ## Common Pitfalls
 
@@ -454,7 +407,7 @@ Week 4:
 
 **Consequence:** Confirmation bias, customers say "yes" to be polite
 
-**Fix:** Use Mom Test questions from `discovery-interview-prep.md` (focus on past behavior)
+**Fix:** Use Mom Test questions from `skills/discovery-interview-prep/SKILL.md` (focus on past behavior)
 
 ---
 
@@ -490,24 +443,24 @@ Week 4:
 ### Related Skills (Orchestrated by This Workflow)
 
 **Phase 1:**
-- `problem-framing-canvas.md` (interactive)
-- `problem-statement.md` (component)
-- `proto-persona.md` (component, optional)
-- `jobs-to-be-done.md` (component, optional)
+- `skills/problem-framing-canvas/SKILL.md` (interactive)
+- `skills/problem-statement/SKILL.md` (component)
+- `skills/proto-persona/SKILL.md` (component, optional)
+- `skills/jobs-to-be-done/SKILL.md` (component, optional)
 
 **Phase 2:**
-- `discovery-interview-prep.md` (interactive)
+- `skills/discovery-interview-prep/SKILL.md` (interactive)
 
 **Phase 4:**
-- `customer-journey-mapping-workshop.md` (interactive, optional)
+- `skills/customer-journey-mapping-workshop/SKILL.md` (interactive, optional)
 
 **Phase 5:**
-- `opportunity-solution-tree.md` (interactive)
-- `lean-ux-canvas.md` (interactive, alternative)
+- `skills/opportunity-solution-tree/SKILL.md` (interactive)
+- `skills/lean-ux-canvas/SKILL.md` (interactive, alternative)
 
 **Phase 6:**
-- `epic-hypothesis.md` (component)
-- `prd-development.md` (workflow)
+- `skills/epic-hypothesis/SKILL.md` (component)
+- `skills/prd-development/SKILL.md` (workflow)
 
 ### External Frameworks
 - Teresa Torres, *Continuous Discovery Habits* (2021) — Weekly customer touchpoints, OST framework

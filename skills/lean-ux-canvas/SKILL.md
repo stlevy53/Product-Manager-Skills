@@ -118,6 +118,8 @@ Use the template: "We believe [business outcome] will be achieved if [user] atta
 
 ## Application
 
+Use `template.md` for the full fill-in structure.
+
 This interactive skill walks through **8 adaptive questions** (one per canvas box) in sequence. At each step, the agent offers guidance, examples, and options to help you fill the box correctly.
 
 ---
@@ -169,7 +171,7 @@ Describe:
 
 1. **I'll describe the business problem** — [Paste or write your description]
 2. **Help me identify the business problem** — [Agent asks follow-up questions: What changed? What metrics are affected? What are competitors doing?]
-3. **I'm not sure what the business problem is** — [Agent suggests starting with `problem-statement.md` or `problem-framing-canvas.md` first]
+3. **I'm not sure what the business problem is** — [Agent suggests starting with `skills/problem-statement/SKILL.md` or `skills/problem-framing-canvas/SKILL.md` first]
 
 **User response:** [Selection or description]
 
@@ -227,9 +229,9 @@ Consider:
 
 **Agent offers 3 options:**
 
-1. **I have personas already** — [Reference `proto-persona.md` or paste persona]
+1. **I have personas already** — [Reference `skills/proto-persona/SKILL.md` or paste persona]
 2. **Help me identify target users** — [Agent asks: Who experiences the business problem most? Who's most likely to adopt? Who's easiest to reach?]
-3. **I need to create personas first** — [Agent suggests using `proto-persona.md` component skill]
+3. **I need to create personas first** — [Agent suggests using `skills/proto-persona/SKILL.md` component skill]
 
 **User response:** [Selection or description]
 
@@ -257,7 +259,7 @@ Focus on **goals, benefits, emotions, empathy**—not metrics (those go in Box 2
 
 1. **I know what users want to achieve** — [Describe user benefits]
 2. **Help me identify user benefits** — [Agent prompts: What job are they hiring this product to do? What pain are they avoiding? What gain are they seeking?]
-3. **I need to research this first** — [Agent suggests `jobs-to-be-done.md` or `discovery-interview-prep.md`]
+3. **I need to research this first** — [Agent suggests `skills/jobs-to-be-done/SKILL.md` or `skills/discovery-interview-prep/SKILL.md`]
 
 **User response:** [Selection or description]
 
@@ -440,99 +442,22 @@ Here's your completed Lean UX Canvas (v2):
 
 Would you like me to:
 1. **Export this canvas** as a Markdown file?
-2. **Suggest related skills** to use next (e.g., `discovery-interview-prep.md` for customer interviews)?
+2. **Suggest related skills** to use next (e.g., `skills/discovery-interview-prep/SKILL.md` for customer interviews)?
 3. **Refine a specific box** (if something feels incomplete)?
 
 ---
 
 ## Examples
 
-### ✅ Good: Mobile Checkout Optimization
+See `examples/sample.md` for full Lean UX Canvas examples.
 
-**Context:** E-commerce company sees mobile traffic surpass desktop, but mobile conversion rate is 15% lower.
+Mini example excerpt:
 
-**Box 1 (Business Problem):**
-"Mobile traffic now represents 60% of site visits, but mobile checkout conversion rate (45%) is 15% lower than desktop (60%). Our checkout flow wasn't designed for mobile—6 form fields, manual address entry, and 3-step payment. Competitors (Amazon, Shopify) offer one-tap checkout. We're losing revenue."
-
-**Box 2 (Business Outcomes):**
-- Increase mobile checkout conversion rate from 45% to 60% within 3 months
-
-**Box 3 (Users):**
-- Mobile-first millennials (25-35) who order 3+ times per week
-
-**Box 4 (User Outcomes & Benefits):**
-- Complete checkout in <30 seconds without typing (avoid frustration of fat-finger errors on mobile keyboard)
-
-**Box 5 (Solutions):**
-1. One-tap checkout (Apple Pay, Google Pay)
-2. Auto-fill address from device location
-3. Save payment method for returning customers
-
-**Box 6 (Hypotheses):**
-- "We believe increasing mobile checkout conversion rate from 45% to 60% will be achieved if mobile-first millennials (25-35) attain faster, friction-free checkout with one-tap Apple Pay integration."
-
-**Box 7 (Riskiest Assumption):**
-- Users will trust one-tap checkout without seeing itemized charges before confirming purchase
-
-**Box 8 (Experiment):**
-- Wizard-of-Oz test: Show one-tap checkout UI, but secretly process payment with existing flow. Measure: Do users click "Pay with Apple Pay"? Do they abandon after seeing the Apple Pay modal?
-
-**Why This Works:**
-- Clear business problem (mobile conversion gap)
-- Measurable outcome (45% → 60%)
-- Specific user segment
-- Testable hypothesis
-- Smallest experiment (Wizard-of-Oz, not full build)
-
----
-
-### ❌ Bad: Feature-First Canvas (Solution-Driven)
-
-**Box 1 (Business Problem):**
-"We need to build a recommendation engine."
-
-**Why This Fails:** This is a solution, not a problem. What changed? Why does a recommendation engine matter?
-
-**Box 2 (Business Outcomes):**
-"Increase revenue."
-
-**Why This Fails:** Too vague. How will you measure? What behavior change indicates success?
-
-**Box 5 (Solutions):**
-"Recommendation engine."
-
-**Why This Fails:** Only one solution (the one someone already decided on). No exploration of alternatives.
-
-**Box 6 (Hypotheses):**
-"We believe users will like recommendations."
-
-**Why This Fails:** Not testable. Doesn't use the hypothesis template. Doesn't connect business outcome to user benefit.
-
-**What Should Have Been Done:**
-- Start with **what changed** in Box 1 (e.g., "Average order value dropped 20% after we removed upsell banners")
-- Define **measurable outcome** in Box 2 (e.g., "Increase average order value from $50 to $75")
-- List **multiple solutions** in Box 5 (e.g., manual upsell banners, AI recommendations, bundle discounts)
-- Test each solution with a hypothesis
-
----
-
-### ✅ Good: Enterprise Onboarding Friction
-
-**Box 1 (Business Problem):**
-"Enterprise customers churn after 6 months because onboarding requires 3+ weeks of manual configuration (SSO, permissions, user imports). Competitors offer self-service onboarding. Our CS team spends 40 hours per customer on setup, limiting our ability to scale."
-
-**Box 7 (Riskiest Assumption):**
-"Enterprise IT admins can configure SSO without human support."
-
-**Box 8 (Experiment):**
-"Concierge test: Manually guide 5 enterprise customers through a self-service onboarding wizard prototype (Figma mockup + Loom walkthrough). Measure: Can they complete setup in <3 days without calling support?"
-
-**Why This Works:**
-- Clear problem (manual onboarding blocks scale)
-- Falsifiable assumption (admins can self-serve)
-- Minimal experiment (concierge test before building automation)
-
----
+```markdown
+**Box 1:** Mobile checkout conversion is 15% lower than desktop
+**Box 2:** Increase mobile conversion from 45% to 60%
+**Box 8:** Wizard-of-Oz test with one-tap checkout
+```
 
 ## Common Pitfalls
 
@@ -586,20 +511,20 @@ Would you like me to:
 
 **Consequence:** Waste weeks/months building the wrong thing.
 
-**Fix:** Design smallest experiment first. If you can't think of one, use `pol-probe-advisor.md` to choose a validation method.
+**Fix:** Design smallest experiment first. If you can't think of one, use `skills/pol-probe-advisor/SKILL.md` to choose a validation method.
 
 ---
 
 ## References
 
 ### Related Skills
-- **[problem-statement](../problem-statement/SKILL.md)** (Component) — Frame problem before filling Box 1
-- **[problem-framing-canvas](../problem-framing-canvas/SKILL.md)** (Interactive) — MITRE Problem Framing before canvas
-- **[proto-persona](../proto-persona/SKILL.md)** (Component) — Create personas for Box 3
-- **[jobs-to-be-done](../jobs-to-be-done/SKILL.md)** (Component) — Identify user benefits for Box 4
-- **[epic-hypothesis](../epic-hypothesis/SKILL.md)** (Component) — Write testable hypotheses (Box 6)
-- **[discovery-interview-prep](../discovery-interview-prep/SKILL.md)** (Interactive) — Design customer interviews for Box 8
-- **[pol-probe-advisor](../pol-probe-advisor/SKILL.md)** (Interactive) — Choose experiment type for Box 8
+- **[problem-statement](skills/problem-statement/SKILL.md)** (Component) — Frame problem before filling Box 1
+- **[problem-framing-canvas](skills/problem-framing-canvas/SKILL.md)** (Interactive) — MITRE Problem Framing before canvas
+- **[proto-persona](skills/proto-persona/SKILL.md)** (Component) — Create personas for Box 3
+- **[jobs-to-be-done](skills/jobs-to-be-done/SKILL.md)** (Component) — Identify user benefits for Box 4
+- **[epic-hypothesis](skills/epic-hypothesis/SKILL.md)** (Component) — Write testable hypotheses (Box 6)
+- **[discovery-interview-prep](skills/discovery-interview-prep/SKILL.md)** (Interactive) — Design customer interviews for Box 8
+- **[pol-probe-advisor](skills/pol-probe-advisor/SKILL.md)** (Interactive) — Choose experiment type for Box 8
 
 ### External Frameworks
 - **Jeff Gothelf** — *Lean UX: Designing Great Products with Agile Teams* (O'Reilly, 2013; 2nd ed. 2016)
