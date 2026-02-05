@@ -54,10 +54,12 @@ From *Crossing the Chasm*, Moore's framework splits positioning into two parts:
 
 ## Application
 
+Use `template.md` for the full fill-in structure.
+
 ### Step 1: Gather Context
 Before drafting, ensure you have:
 - **Target customer segment:** Demographics, behaviors, role (not just "SMBs" or "developers")
-- **Underserved need:** Pains, gains, jobs-to-be-done (reference `jobs-to-be-done.md` if needed)
+- **Underserved need:** Pains, gains, jobs-to-be-done (reference `skills/jobs-to-be-done/SKILL.md` if needed)
 - **Product category:** How buyers mentally file your solution (CRM, analytics platform, etc.)
 - **Competitive landscape:** Direct competitors AND substitute behaviors (e.g., "Excel" is often the real competitor)
 
@@ -129,55 +131,17 @@ If any answer is "no" or "sort of," revise.
 
 ## Examples
 
-### Example 1: Slack (Early Positioning)
+See `examples/sample.md` for full positioning examples.
 
-**Value Proposition:**
-- **For** software development teams
+Mini example excerpt:
+
+```markdown
+**For** software development teams
 - **that need** to reduce email overload and improve real-time collaboration
 - Slack
 - **is a** team messaging platform
-- **that** centralizes communication, integrates with dev tools, and makes conversations searchable and organized
-
-**Differentiation Statement:**
-- **Unlike** email or Skype
-- Slack
-- **provides** persistent, searchable, organized conversations with deep tool integrations
-
-**Why this works:**
-- Target is specific (dev teams, not "all teams")
-- Need is visceral (email overload is a real pain)
-- Category is clear (messaging platform)
-- Differentiation is tangible (searchability + integrations)
-
----
-
-### Example 2: Bad Positioning (Generic SaaS Product)
-
-**Value Proposition:**
-- **For** businesses
-- **that need** to improve productivity
-- ProductX
-- **is a** software solution
-- **that** helps teams work more efficiently
-
-**Differentiation Statement:**
-- **Unlike** traditional tools
-- ProductX
-- **provides** modern features and integrations
-
-**Why this fails:**
-- "Businesses" is not a target (too broad)
-- "Improve productivity" is not a need (it's an outcome without context)
-- "Software solution" is not a category (says nothing)
-- "Modern features" is not differentiation (vague, unverifiable)
-
-**How to fix it:**
-- Narrow target: "For customer support teams in B2B SaaS companies"
-- Sharpen need: "that need to reduce response time without increasing headcount"
-- Define category: "is a customer support automation platform"
-- Specify benefit: "that resolves 40% of tickets via AI-powered workflows"
-- Name competitor: "Unlike Zendesk or Intercom"
-- Prove differentiation: "provides AI resolution before human escalation, reducing median response time by 60%"
+- **that** centralizes communication and makes conversations searchable
+```
 
 ---
 
@@ -231,10 +195,10 @@ If any answer is "no" or "sort of," revise.
 ## References
 
 ### Related Skills
-- `problem-statement.md` — Defines the problem positioning addresses
-- `jobs-to-be-done.md` — Informs the "that need" statement
-- `proto-persona.md` — Defines the "For [target]" segment
-- `press-release.md` — Positioning informs press release messaging
+- `skills/problem-statement/SKILL.md` — Defines the problem positioning addresses
+- `skills/jobs-to-be-done/SKILL.md` — Informs the "that need" statement
+- `skills/proto-persona/SKILL.md` — Defines the "For [target]" segment
+- `skills/press-release/SKILL.md` — Positioning informs press release messaging
 
 ### External Frameworks
 - Geoffrey Moore, *Crossing the Chasm* (1991) — Origin of this framework
@@ -244,9 +208,12 @@ If any answer is "no" or "sort of," revise.
 ### Dean's Work
 - [Link to relevant Dean Peters' Substack articles if applicable]
 
+### Provenance
+- Adapted from `prompts/positioning-statement.md` in the `https://github.com/deanpeters/product-manager-prompts` repo.
+
 ---
 
 **Skill type:** Component
 **Suggested filename:** `positioning-statement.md`
 **Suggested placement:** `/skills/components/`
-**Dependencies:** References `problem-statement.md`, `jobs-to-be-done.md`, `proto-persona.md`
+**Dependencies:** References `skills/problem-statement/SKILL.md`, `skills/jobs-to-be-done/SKILL.md`, `skills/proto-persona/SKILL.md`

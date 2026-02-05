@@ -42,7 +42,7 @@ Instead of saying *"Write a PRD"* and hoping for the best, the agent already kno
 
 ## 🏗️ Three-Tier Architecture (How Skills Work Together)
 
-These 29 skills are organized into **three types** that build on each other:
+These 34 skills are organized into **three types** that build on each other:
 
 ```text
 ┌───────────────────────────────────────────────────────────┐
@@ -53,21 +53,21 @@ These 29 skills are organized into **three types** that build on each other:
 └───────────────────────────────────────────────────────────┘
                          ↓ orchestrates
 ┌───────────────────────────────────────────────────────────┐
-│  INTERACTIVE SKILLS (10)                                  │
+│  INTERACTIVE SKILLS (14)                                  │
 │  Guided discovery with adaptive questions                 │
 │  Example: "Which prioritization framework should I use?"  │
 │  Timeline: 30-90 minutes                                  │
 └───────────────────────────────────────────────────────────┘
                          ↓ uses
 ┌───────────────────────────────────────────────────────────┐
-│  COMPONENT SKILLS (15)                                    │
+│  COMPONENT SKILLS (16)                                    │
 │  Templates for specific PM deliverables                   │
 │  Example: "Write a user story"                            │
 │  Timeline: 10-30 minutes                                  │
 └───────────────────────────────────────────────────────────┘
 ```
 
-### Component Skills (15) — Templates & Artifacts
+### Component Skills (16) — Templates & Artifacts
 **What:** Reusable templates for creating specific PM deliverables (user stories, positioning statements, epics, personas, PRDs, etc.)
 
 **When to use:** You need a standard template or format for a specific deliverable.
@@ -76,7 +76,7 @@ These 29 skills are organized into **three types** that build on each other:
 
 ---
 
-### Interactive Skills (10) — Guided Discovery
+### Interactive Skills (14) — Guided Discovery
 **What:** Multi-turn conversational flows where AI asks you 3-5 adaptive questions, then offers smart recommendations based on your context.
 
 **When to use:** You need help deciding which approach to take or gathering context before executing.
@@ -101,7 +101,7 @@ These 29 skills are organized into **three types** that build on each other:
 
 ---
 
-## 📦 All 33 Skills (Clickable)
+## 📦 All 34 Skills (Clickable)
 
 Now that you understand the three types, here's the complete catalog:
 
@@ -128,7 +128,7 @@ Now that you understand the three types, here's the complete catalog:
 
 ---
 
-### 🔄 Interactive Skills (13)
+### 🔄 Interactive Skills (14)
 
 | Skill | What It Does |
 |-------|--------------|
@@ -146,6 +146,7 @@ Now that you understand the three types, here's the complete catalog:
 | **[problem-framing-canvas](skills/problem-framing-canvas/SKILL.md)** | Leads you through MITRE Problem Framing (Look Inward/Outward/Reframe) |
 | **[tam-sam-som-calculator](skills/tam-sam-som-calculator/SKILL.md)** | Projects market size (TAM/SAM/SOM) with real-world data and citations |
 | **[user-story-mapping-workshop](skills/user-story-mapping-workshop/SKILL.md)** | Walks you through creating story maps with backbone and release slices |
+| **[workshop-facilitation](skills/workshop-facilitation/SKILL.md)** | Adds one-step-at-a-time facilitation with numbered recommendations for workshop skills |
 
 ---
 

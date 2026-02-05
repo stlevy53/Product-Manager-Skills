@@ -1,6 +1,6 @@
 ---
 name: user-story
-description: Create clear, concise user stories that combine Mike Cohn's user story format with Gherkin-style acceptance criteria. Use this to translate user needs into actionable development work that focuses on 
+description: Create clear, concise user stories that combine Mike Cohn's user story format with Gherkin-style acceptance criteria. Use this to translate user needs into actionable development work that focuses on
 type: component
 ---
 
@@ -48,7 +48,7 @@ A user story combines:
 
 ### When NOT to Use This
 - For pure technical debt or refactoring (use engineering tasks instead)
-- When stories are too large (split first—see `user-story-splitting.md`)
+- When stories are too large (split first—see `skills/user-story-splitting/SKILL.md`)
 - Before understanding the user problem (write a problem statement first)
 
 ---
@@ -57,8 +57,8 @@ A user story combines:
 
 ### Step 1: Gather Context
 Before writing a story, ensure you have:
-- **User persona:** Who is this for? (reference `proto-persona.md`)
-- **Problem understanding:** What need does this address? (reference `problem-statement.md`)
+- **User persona:** Who is this for? (reference `skills/proto-persona/SKILL.md`)
+- **Problem understanding:** What need does this address? (reference `skills/problem-statement/SKILL.md`)
 - **Desired outcome:** What does success look like?
 - **Constraints:** Technical, time, or scope limitations
 
@@ -67,6 +67,8 @@ Before writing a story, ensure you have:
 ---
 
 ### Step 2: Write the Use Case
+
+Use `template.md` for the full fill-in structure.
 
 Fill in the template:
 
@@ -116,7 +118,7 @@ Fill in the template:
 - **Alignment:** Does "When" match "I want to"? Does "Then" match "so that"?
 
 **Red flags:**
-- **Multiple Whens/Thens:** Sign of scope creep—split the story (reference `user-story-splitting.md`)
+- **Multiple Whens/Thens:** Sign of scope creep—split the story (reference `skills/user-story-splitting/SKILL.md`)
 - **Vague Thens:** "Then I see improved performance" (unmeasurable—make it specific)
 
 ---
@@ -140,14 +142,16 @@ Write a short, memorable summary that captures the story's value:
 
 - **Read aloud to the team:** Does everyone understand who, what, why?
 - **Test acceptance criteria:** Can QA write test cases from this?
-- **Check for splitting:** If the story feels too big, use `user-story-splitting.md`
+- **Check for splitting:** If the story feels too big, use `skills/user-story-splitting/SKILL.md`
 - **Ensure testability:** Can you prove "Then" happened?
 
 ---
 
 ## Examples
 
-### Example 1: Good User Story
+See `examples/sample.md` for full examples (good, bad, and split-needed stories).
+
+Mini example excerpt:
 
 ```markdown
 ### User Story 042:
@@ -160,100 +164,12 @@ Write a short, memorable summary that captures the story's value:
 - **so that** I can access the app without creating and remembering a new password
 
 #### Acceptance Criteria:
-
 - **Scenario:** First-time trial user logs in via Google OAuth
 - **Given:** I am on the login page
-- **and Given:** I have a Google account
-- **and Given:** The "Sign in with Google" button is visible
+- **and Given:** I have a login account
 - **When:** I click the "Sign in with Google" button and authorize the app
 - **Then:** I am logged into the app and redirected to the onboarding flow
 ```
-
-**Why this works:**
-- Persona is specific ("trial user visiting for the first time")
-- Action is clear ("log in using my Google account")
-- Outcome explains motivation ("without creating a new password")
-- Acceptance criteria are testable (QA can verify each step)
-- Only one When, one Then (appropriately scoped)
-
----
-
-### Example 2: Bad User Story (Too Vague)
-
-```markdown
-### User Story 999:
-
-- **Summary:** Improve login experience
-
-#### Use Case:
-- **As a** user
-- **I want to** better login
-- **so that** I can use the app
-
-#### Acceptance Criteria:
-
-- **Scenario:** User logs in
-- **Given:** I want to log in
-- **When:** I log in
-- **Then:** It works better
-```
-
-**Why this fails:**
-- "User" is too generic (trial user? returning user? admin?)
-- "Better login" is not an action (what specifically?)
-- "Use the app" is not a specific outcome (everyone wants to use the app)
-- Acceptance criteria are untestable ("works better" = unmeasurable)
-
-**How to fix it:**
-- Narrow the persona: "trial user," "returning user without password manager," etc.
-- Define the action: "log in using Google," "reset my password via email," etc.
-- Specify the outcome: "without remembering a new password," "in under 30 seconds," etc.
-- Make acceptance criteria falsifiable: "Then I am redirected to the dashboard within 2 seconds"
-
----
-
-### Example 3: Story That Needs Splitting
-
-```markdown
-### User Story 100:
-
-- **Summary:** Manage shopping cart
-
-#### Use Case:
-- **As a** shopper
-- **I want to** add items, remove items, update quantities, apply coupons, and checkout
-- **so that** I can complete my purchase
-
-#### Acceptance Criteria:
-
-- **Scenario:** Shopping cart management
-- **Given:** I have items in my cart
-- **When:** I add an item
-- **Then:** It appears in the cart
-- **When:** I remove an item
-- **Then:** It disappears from the cart
-- **When:** I update quantity
-- **Then:** The quantity changes
-- **When:** I apply a coupon
-- **Then:** The discount is applied
-- **When:** I checkout
-- **Then:** I proceed to payment
-```
-
-**Why this needs splitting:**
-- Multiple "When" statements = multiple stories
-- Scope is too large for a single sprint
-- Different outcomes aren't related (adding items ≠ applying coupons)
-
-**How to split it:**
-Use `user-story-splitting.md` to break this into:
-1. "Add items to cart"
-2. "Remove items from cart"
-3. "Update item quantities"
-4. "Apply discount coupons"
-5. "Checkout and proceed to payment"
-
-Each becomes its own story with focused acceptance criteria.
 
 ---
 
@@ -273,7 +189,7 @@ Each becomes its own story with focused acceptance criteria.
 
 **Consequence:** No persona clarity. Different users have different needs.
 
-**Fix:** Use specific personas: "As a trial user," "As a paid subscriber," "As an admin," etc. (reference `proto-persona.md`)
+**Fix:** Use specific personas: "As a trial user," "As a paid subscriber," "As an admin," etc. (reference `skills/proto-persona/SKILL.md`)
 
 ---
 
@@ -291,7 +207,7 @@ Each becomes its own story with focused acceptance criteria.
 
 **Consequence:** Story is too big. Likely multiple features bundled together.
 
-**Fix:** Split the story using `user-story-splitting.md`. Each When/Then pair should be its own story (or at least evaluated for splitting).
+**Fix:** Split the story using `skills/user-story-splitting/SKILL.md`. Each When/Then pair should be its own story (or at least evaluated for splitting).
 
 ---
 
@@ -307,10 +223,10 @@ Each becomes its own story with focused acceptance criteria.
 ## References
 
 ### Related Skills
-- `user-story-splitting.md` — How to break large stories into smaller ones
-- `proto-persona.md` — Defines the "As a [persona]" section
-- `problem-statement.md` — Stories should address validated problems
-- `epic-hypothesis.md` — Epics decompose into user stories
+- `skills/user-story-splitting/SKILL.md` — How to break large stories into smaller ones
+- `skills/proto-persona/SKILL.md` — Defines the "As a [persona]" section
+- `skills/problem-statement/SKILL.md` — Stories should address validated problems
+- `skills/epic-hypothesis/SKILL.md` — Epics decompose into user stories
 
 ### External Frameworks
 - Mike Cohn, *User Stories Applied* (2004) — Origin of the "As a / I want / so that" format
@@ -320,10 +236,13 @@ Each becomes its own story with focused acceptance criteria.
 ### Dean's Work
 - [Link to relevant Dean Peters' Substack articles if applicable]
 
+### Provenance
+- Adapted from `prompts/user-story-prompt-template.md` in the `https://github.com/deanpeters/product-manager-prompts` repo.
+
 ---
 
 **Skill type:** Component
 **Suggested filename:** `user-story.md`
 **Suggested placement:** `/skills/components/`
-**Dependencies:** References `proto-persona.md`, `problem-statement.md`
-**Used by:** `user-story-splitting.md`, `epic-hypothesis.md`
+**Dependencies:** References `skills/proto-persona/SKILL.md`, `skills/problem-statement/SKILL.md`
+**Used by:** `skills/user-story-splitting/SKILL.md`, `skills/epic-hypothesis/SKILL.md`

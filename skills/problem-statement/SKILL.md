@@ -57,11 +57,13 @@ Based on Jobs-to-be-Done and empathy mapping, the framework structures problems 
 
 ## Application
 
+Use `template.md` for the full fill-in structure.
+
 ### Step 1: Gather User Context
 Before drafting, ensure you have:
 - **User interviews or research:** Direct quotes, observed behaviors, pain points
-- **Jobs-to-be-Done insights:** What users are "hiring" your product to do (reference `jobs-to-be-done.md`)
-- **Persona clarity:** Who specifically experiences this problem (reference `proto-persona.md`)
+- **Jobs-to-be-Done insights:** What users are "hiring" your product to do (reference `skills/jobs-to-be-done/SKILL.md`)
+- **Persona clarity:** Who specifically experiences this problem (reference `skills/proto-persona/SKILL.md`)
 - **Constraints data:** Geographic, tech, time, demographic limitations
 
 **If missing context:** Run discovery interviews, contextual inquiries, or user shadowing. Don't fabricate problems.
@@ -154,86 +156,17 @@ Synthesize the narrative into one powerful sentence:
 
 ## Examples
 
-### Example 1: Slack (Early Problem Statement)
+See `examples/sample.md` for full examples (good and bad problem statements).
 
-**Problem Framing Narrative:**
+Mini example excerpt:
 
+```markdown
 **I am:** A software developer on a distributed team
-- Working across multiple time zones with teammates I rarely see in person
-- Collaborating on complex technical projects requiring frequent communication
-- Drowning in email threads that are hard to follow and unsearchable
-
-**Trying to:**
-- Communicate in real-time with my team without losing context or important decisions
-
-**But:**
-- Email is too slow and threads get buried
-- Skype/IM is ephemeral—conversations disappear and can't be searched later
-- Important decisions get lost, forcing me to re-ask questions or hunt through old messages
-
-**Because:**
-- No tool combines real-time chat with persistent, searchable history
-
-**Which makes me feel:**
-- Frustrated, inefficient, and disconnected from my team
-
-**Context & Constraints:**
-- Distributed teams across time zones
-- Need for asynchronous + synchronous communication
-- Must integrate with dev tools (GitHub, Jira, CI/CD)
-
-**Final Problem Statement:**
-"Distributed software teams need a way to communicate in real-time with persistent, searchable history because email is too slow and IM is ephemeral, which causes lost context and repeated questions."
-
----
-
-### Example 2: Bad Problem Statement (Solution in Disguise)
-
-**Problem Framing Narrative:**
-
-**I am:** A product manager
-
-**Trying to:**
-- Use AI-powered analytics
-
-**But:**
-- We don't have AI features
-
-**Because:**
-- Our competitors do
-
-**Which makes me feel:**
-- Behind the times
-
-**Final Problem Statement:**
-"We need AI-powered analytics to compete."
-
-**Why this fails:**
-- **"Trying to" is a solution, not an outcome:** What are you actually trying to achieve? Faster insights? Better predictions?
-- **"But" is a missing feature, not a barrier:** What can't you do today? What's the impact?
-- **"Because" is competitor-driven, not user-driven:** Why do *users* care?
-- **"Makes me feel" is about the PM, not the user:** Wrong perspective
-
-**How to fix it:**
-Reframe from the user's perspective:
-
-**I am:** A product manager analyzing user behavior across multiple features
-
-**Trying to:**
-- Identify which user segments are at risk of churning within the next 30 days
-
-**But:**
-- Current analytics require manual SQL queries and hours of data wrangling
-- By the time I identify at-risk users, many have already churned
-
-**Because:**
-- Our analytics tools don't surface predictive insights automatically
-
-**Which makes me feel:**
-- Reactive instead of proactive, and like I'm failing to retain customers
-
-**Final Problem Statement:**
-"Product managers need a way to proactively identify at-risk users before they churn because current analytics are manual and slow, which causes missed retention opportunities."
+**Trying to:** Communicate in real-time with my team without losing context
+**But:** Email is too slow and IM is ephemeral
+**Because:** No tool combines real-time chat with searchable history
+**Which makes me feel:** Frustrated and disconnected
+```
 
 ---
 
@@ -287,10 +220,10 @@ Reframe from the user's perspective:
 ## References
 
 ### Related Skills
-- `jobs-to-be-done.md` — Informs the "Trying to" and "But" sections
-- `proto-persona.md` — Defines the "I am" persona
-- `positioning-statement.md` — Problem statement informs positioning
-- `user-story.md` — Problem statement guides story prioritization
+- `skills/jobs-to-be-done/SKILL.md` — Informs the "Trying to" and "But" sections
+- `skills/proto-persona/SKILL.md` — Defines the "I am" persona
+- `skills/positioning-statement/SKILL.md` — Problem statement informs positioning
+- `skills/user-story/SKILL.md` — Problem statement guides story prioritization
 
 ### External Frameworks
 - Clayton Christensen, *Jobs to Be Done* — Origin of outcome-focused problem framing
@@ -300,9 +233,12 @@ Reframe from the user's perspective:
 ### Dean's Work
 - [Link to relevant Dean Peters' Substack articles if applicable]
 
+### Provenance
+- Adapted from `prompts/framing-the-problem-statement.md` in the `https://github.com/deanpeters/product-manager-prompts` repo.
+
 ---
 
 **Skill type:** Component
 **Suggested filename:** `problem-statement.md`
 **Suggested placement:** `/skills/components/`
-**Dependencies:** References `jobs-to-be-done.md`, `proto-persona.md`
+**Dependencies:** References `skills/jobs-to-be-done/SKILL.md`, `skills/proto-persona/SKILL.md`

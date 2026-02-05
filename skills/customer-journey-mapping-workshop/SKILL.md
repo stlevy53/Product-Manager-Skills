@@ -67,6 +67,8 @@ Opportunities:     Opportunities:   Opportunities:  Opportunities:  Opportunitie
 
 This interactive skill asks **up to 5 adaptive questions**, offering **3-4 enumerated options** at each step.
 
+Interaction pattern: Pair with `skills/workshop-facilitation/SKILL.md` when you want a one-step-at-a-time flow with numbered recommendations each turn. If the user asks for a single-shot output, skip the multi-turn facilitation.
+
 ---
 
 ### Step 0: Gather Context (Before Questions)

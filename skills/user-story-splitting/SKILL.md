@@ -53,7 +53,7 @@ Based on Richard Lawrence and Peter Green's "Humanizing Work Guide to Splitting 
 ## Application
 
 ### Step 1: Identify the Original Story
-Start with the story/epic/feature that needs splitting. Ensure it's written using the user story format (reference `user-story.md` or `epic-hypothesis.md`).
+Start with the story/epic/feature that needs splitting. Ensure it's written using the user story format (reference `skills/user-story/SKILL.md` or `skills/epic-hypothesis/SKILL.md`).
 
 ```markdown
 ### Original Story:
@@ -63,6 +63,8 @@ Start with the story/epic/feature that needs splitting. Ensure it's written usin
 ---
 
 ### Step 2: Apply the Splitting Logic
+
+Use `template.md` for the full fill-in structure and output format.
 
 Work through the 8 splitting patterns in order. Stop when you find one that applies.
 
@@ -172,7 +174,7 @@ Work through the 8 splitting patterns in order. Stop when you find one that appl
 
 ### Step 3: Write the Split Stories
 
-For each split, write a complete user story using the format from `user-story.md`:
+For each split, write a complete user story using the format from `skills/user-story/SKILL.md`:
 
 ```markdown
 ### Split 1 using [Pattern Name]:
@@ -209,150 +211,18 @@ If any answer is "no," revise.
 
 ## Examples
 
-### Example 1: Splitting by Workflow Steps
+See `examples/sample.md` for full splitting examples.
 
-**Original Story:**
-```markdown
-### User Story 100: Complete Checkout Process
-
-**Use Case:**
-- **As a** shopper
-- **I want to** complete checkout, including entering shipping, payment, and confirming my order
-- **so that** I can receive my items
-
-**Acceptance Criteria:**
-- **Given:** I have items in my cart
-- **When:** I enter shipping address, payment info, and confirm
-- **Then:** My order is placed
-```
-
-**Why it needs splitting:** Multiple workflow steps bundled together.
-
-**Split using Workflow Steps:**
+Mini example excerpt:
 
 ```markdown
-### Split 1: Enter Shipping Address
+### Original Story:
+As a team admin, I want to manage team members so that I can control access.
 
-**User Story 101:**
-- **Summary:** Enter shipping address during checkout
-
-**Use Case:**
-- **As a** shopper
-- **I want to** enter my shipping address
-- **so that** my items are delivered to the right location
-
-**Acceptance Criteria:**
-- **Given:** I have items in my cart
-- **When:** I enter a valid shipping address and click "Continue"
-- **Then:** I proceed to payment entry
-
----
-
-### Split 2: Enter Payment Information
-
-**User Story 102:**
-- **Summary:** Enter payment info during checkout
-
-**Use Case:**
-- **As a** shopper
-- **I want to** enter my credit card information
-- **so that** I can pay for my order
-
-**Acceptance Criteria:**
-- **Given:** I have entered a shipping address
-- **When:** I enter valid payment info and click "Continue"
-- **Then:** I proceed to order confirmation
-
----
-
-### Split 3: Confirm Order
-
-**User Story 103:**
-- **Summary:** Review and confirm order
-
-**Use Case:**
-- **As a** shopper
-- **I want to** review my order details and confirm
-- **so that** my order is placed
-
-**Acceptance Criteria:**
-- **Given:** I have entered shipping and payment info
-- **When:** I review the order summary and click "Place Order"
-- **Then:** My order is submitted and I receive a confirmation
-```
-
----
-
-### Example 2: Splitting by Acceptance Criteria Complexity
-
-**Original Story:**
-```markdown
-### User Story 200: Manage Team Members
-
-**Use Case:**
-- **As a** team admin
-- **I want to** manage team members
-- **so that** I can control access
-
-**Acceptance Criteria:**
-- **When:** I add a member, Then they receive an invite
-- **When:** I remove a member, Then they lose access
-- **When:** I change a member's role, Then their permissions update
-```
-
-**Why it needs splitting:** Multiple "When/Then" statements.
-
-**Split using Acceptance Criteria Complexity:**
-
-```markdown
-### Split 1: Add Team Members
-
-**User Story 201:**
-- **Summary:** Invite new team members
-
-**Use Case:**
-- **As a** team admin
-- **I want to** invite new members to my team
-- **so that** they can access shared resources
-
-**Acceptance Criteria:**
-- **Given:** I have admin permissions
-- **When:** I enter an email and click "Invite"
-- **Then:** The recipient receives an email invitation
-
----
-
-### Split 2: Remove Team Members
-
-**User Story 202:**
-- **Summary:** Remove team members
-
-**Use Case:**
-- **As a** team admin
-- **I want to** remove members from my team
-- **so that** they no longer have access
-
-**Acceptance Criteria:**
-- **Given:** I have admin permissions
-- **When:** I click "Remove" next to a member's name
-- **Then:** That member loses access immediately
-
----
-
-### Split 3: Change Member Roles
-
-**User Story 203:**
-- **Summary:** Update team member roles
-
-**Use Case:**
-- **As a** team admin
-- **I want to** change a member's role
-- **so that** their permissions match their responsibilities
-
-**Acceptance Criteria:**
-- **Given:** I have admin permissions
-- **When:** I select a new role for a member and save
-- **Then:** Their permissions update to match the new role
+### Suggested Splits (Acceptance Criteria Complexity):
+1. Invite new team members
+2. Remove team members
+3. Update team member roles
 ```
 
 ---
@@ -407,9 +277,9 @@ If any answer is "no," revise.
 ## References
 
 ### Related Skills
-- `user-story.md` — Format for writing the split stories
-- `epic-hypothesis.md` — Epics often need splitting before becoming stories
-- `jobs-to-be-done.md` — Helps identify meaningful splits along user jobs
+- `skills/user-story/SKILL.md` — Format for writing the split stories
+- `skills/epic-hypothesis/SKILL.md` — Epics often need splitting before becoming stories
+- `skills/jobs-to-be-done/SKILL.md` — Helps identify meaningful splits along user jobs
 
 ### External Frameworks
 - Richard Lawrence & Peter Green, *The Humanizing Work Guide to Splitting User Stories* — Origin of the 8 splitting patterns
@@ -419,10 +289,13 @@ If any answer is "no," revise.
 ### Dean's Work
 - User Story Splitting Prompt Template (based on Humanizing Work framework)
 
+### Provenance
+- Adapted from `prompts/user-story-splitting-prompt-template.md` in the `https://github.com/deanpeters/product-manager-prompts` repo.
+
 ---
 
 **Skill type:** Component
 **Suggested filename:** `user-story-splitting.md`
 **Suggested placement:** `/skills/components/`
-**Dependencies:** References `user-story.md`, `epic-hypothesis.md`
+**Dependencies:** References `skills/user-story/SKILL.md`, `skills/epic-hypothesis/SKILL.md`
 **Applies to:** User stories, epics, and any work that's too large to complete in a single sprint

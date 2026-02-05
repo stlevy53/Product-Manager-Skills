@@ -60,9 +60,11 @@ Influenced by Clayton Christensen and the Value Proposition Canvas (Osterwalder)
 
 ## Application
 
+Use `template.md` for the full fill-in structure.
+
 ### Step 1: Define the Context
 Before exploring JTBD, clarify:
-- **Target customer segment:** Who are you studying? (reference `proto-persona.md`)
+- **Target customer segment:** Who are you studying? (reference `skills/proto-persona/SKILL.md`)
 - **Situation:** In what context does the job arise? (e.g., "When managing a project deadline...")
 - **Current solutions:** What do they use today? (competitors, workarounds, doing nothing)
 
@@ -273,91 +275,22 @@ Ask: "How would your life be better if this job were easier?"
 
 - **Rank pains by intensity:** Which pains are acute vs. mild annoyances?
 - **Identify must-have vs. nice-to-have gains:** What would drive adoption vs. what's just a bonus?
-- **Cross-reference with personas:** Do different personas have different jobs/pains/gains? (reference `proto-persona.md`)
+- **Cross-reference with personas:** Do different personas have different jobs/pains/gains? (reference `skills/proto-persona/SKILL.md`)
 - **Validate with data:** Survey a broader audience to confirm JTBD insights from interviews
 
 ---
 
 ## Examples
 
-### Example 1: Project Management Software (Good JTBD Analysis)
+See `examples/sample.md` for full JTBD examples.
 
-**Functional Jobs:**
-- Coordinate tasks across a distributed team
-- Track project progress against deadlines
-- Identify blockers before they derail the project
+Mini example excerpt:
 
-**Social Jobs:**
-- Be seen as an organized, reliable project leader
-- Demonstrate transparency to stakeholders
-
-**Emotional Jobs:**
-- Feel confident that nothing is slipping through the cracks
-- Avoid the stress of last-minute surprises
-
-**Pains - Challenges:**
-- Team members use different tools (Slack, email, spreadsheets), causing information silos
-- No single source of truth for project status
-
-**Pains - Costliness:**
-- Manually updating status reports takes 3 hours per week
-- Meetings to sync everyone take 5+ hours per week
-
-**Pains - Common Mistakes:**
-- Forgetting to follow up on tasks without clear ownership
-- Miscommunicating priorities, leading to wasted effort
-
-**Pains - Unresolved Problems:**
-- Current tools don't surface blockers automatically
-- Hard to visualize dependencies between tasks
-
-**Gains - Expectations:**
-- Automatically updates stakeholders on progress without manual reports
-- Suggests task owners based on workload and expertise
-
-**Gains - Savings:**
-- Reduce status reporting time from 3 hours to 15 minutes
-- Cut sync meetings in half
-
-**Gains - Adoption Factors:**
-- Easy to onboard (< 30 minutes to set up)
-- Integrates with Slack and Google Calendar
-
-**Gains - Life Improvement:**
-- Leave work on time instead of staying late to track down updates
-- Feel proactive instead of reactive
-
-**Why this works:** Jobs are specific and solution-agnostic. Pains are validated by research. Gains are measurable and prioritizable.
-
----
-
-### Example 2: Bad JTBD Analysis (Feature Wishlist)
-
-**Functional Jobs:**
-- Use AI
-- Have dashboards
-- Get mobile app
-
-**Social Jobs:**
-- Be seen as innovative
-
-**Emotional Jobs:**
-- Feel modern
-
-**Pains:**
-- Current tools are old
-
-**Gains:**
-- Better UX
-- Faster performance
-
-**Why this fails:**
-- "Use AI" is not a job—it's a solution (what are they trying to *accomplish* with AI?)
-- "Have dashboards" is a feature, not a job
-- Pains are vague ("current tools are old" = not actionable)
-- Gains are generic ("better UX" = everyone says this)
-
-**How to fix it:** Interview users. Ask "What are you trying to do?" not "What features do you want?" Dig into specific tasks, obstacles, and outcomes.
+```markdown
+**Functional Jobs:** Coordinate tasks across a distributed team
+**Pains - Challenges:** Team members use different tools, creating silos
+**Gains - Savings:** Reduce status reporting time from 3 hours to 15 minutes
+```
 
 ---
 
@@ -411,9 +344,9 @@ Ask: "How would your life be better if this job were easier?"
 ## References
 
 ### Related Skills
-- `proto-persona.md` — Defines who has these jobs/pains/gains
-- `problem-statement.md` — JTBD informs the "Trying to" and "But" sections
-- `positioning-statement.md` — JTBD informs the "that need" statement
+- `skills/proto-persona/SKILL.md` — Defines who has these jobs/pains/gains
+- `skills/problem-statement/SKILL.md` — JTBD informs the "Trying to" and "But" sections
+- `skills/positioning-statement/SKILL.md` — JTBD informs the "that need" statement
 
 ### External Frameworks
 - Clayton Christensen, *Competing Against Luck* (2016) — Origin of Jobs-to-be-Done theory
@@ -423,10 +356,13 @@ Ask: "How would your life be better if this job were easier?"
 ### Dean's Work
 - [Link to relevant Dean Peters' Substack articles if applicable]
 
+### Provenance
+- Adapted from `prompts/jobs-to-be-done.md` in the `https://github.com/deanpeters/product-manager-prompts` repo.
+
 ---
 
 **Skill type:** Component
 **Suggested filename:** `jobs-to-be-done.md`
 **Suggested placement:** `/skills/components/`
-**Dependencies:** References `proto-persona.md`
-**Used by:** `positioning-statement.md`, `problem-statement.md`, `epic-hypothesis.md`
+**Dependencies:** References `skills/proto-persona/SKILL.md`
+**Used by:** `skills/positioning-statement/SKILL.md`, `skills/problem-statement/SKILL.md`, `skills/epic-hypothesis/SKILL.md`

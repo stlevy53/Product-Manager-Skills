@@ -58,11 +58,13 @@ Adapted from NNGroup's framework and Carnegie Mellon's PM curriculum, a customer
 
 ## Application
 
+Use `template.md` for the full fill-in structure.
+
 ### Step 1: Prepare Prerequisites
 
 Before mapping, ensure you have:
 1. **Key stakeholders:** Marketing, sales, product, customer service representatives
-2. **Buyer personas:** Detailed personas with demographics, psychographics, goals, challenges (reference `proto-persona.md`)
+2. **Buyer personas:** Detailed personas with demographics, psychographics, goals, challenges (reference `skills/proto-persona/SKILL.md`)
 3. **Defined stages:** Main stages of your buying process (typically: Awareness, Consideration, Decision, Service, Loyalty)
 4. **Touchpoint inventory:** All places customers interact with your brand (website, social, email, store, support, etc.)
 
@@ -246,48 +248,15 @@ Review the map and ask:
 
 ## Examples
 
-### Example 1: Good Customer Journey Map (B2B SaaS Product)
+See `examples/sample.md` for a full customer journey map example.
+
+Mini example excerpt:
 
 ```markdown
-## Customer Journey Map: Manager Mike (Product Management Tool)
-
-### Persona
-- Manager Mike: 35-42, Director of Product at mid-sized B2B SaaS, struggles with data-driven prioritization, values time savings
-
-### Objectives
-- Identify top 3 drop-off points between stages
-- Align marketing, sales, and product on customer motivations
-- Reduce time-to-activation from 4 hours to 2 hours
-
----
-
-| **Stage** | **Awareness** | **Consideration** | **Decision** | **Service** | **Loyalty** |
-|-----------|---------------|-------------------|--------------|-------------|-------------|
-| **Customer Actions** | Sees LinkedIn ad, hears from PM peer, Googles "roadmap software" | Compares features on G2, reads blog posts, requests demo | Signs up for free trial, tests with real data | Onboards team, builds first roadmap, integrates with Jira | Uses daily, recommends to peers, shares roadmap wins on LinkedIn |
-| **Touchpoints** | LinkedIn Ads, PM conferences, Google organic search, G2 | Website, demo calls, sales emails, G2 reviews | Free trial product, onboarding emails, setup wizard | Product, support chat, knowledge base, video tutorials | Product, community forum, CSM check-ins, case study participation |
-| **Customer Experience** | Curious but skeptical: "Is this better than spreadsheets?" | Excited but overwhelmed: "Too many options, how do I choose?" | Anxious: "Will setup take all weekend?" | Relieved: "This was easier than expected!" (or frustrated if not) | Confident: "My roadmaps are finally data-driven. Proud of wins." |
-| **KPIs** | Ad impressions: 100k/month, organic traffic: 5k/month, G2 views: 2k/month | Demo requests: 100/month, trial signups: 50/month | Trial-to-paid conversion: 20%, time-to-first-roadmap: 2 hours | Activation rate: 70%, support tickets: 2/user, onboarding NPS: 8 | Retention: 85%, NPS: 50, referrals: 15%, upsell rate: 10% |
-| **Business Goals** | Increase brand awareness, generate 500 qualified leads/month | Improve lead quality, reduce sales cycle to 30 days | Increase conversion from 20% to 25%, reduce time-to-value | Reduce churn from 15% to 10%, increase activation to 80% | Increase LTV by 20%, generate 50 referrals/quarter |
-| **Teams Involved** | Marketing (ads, SEO), Content (blog) | Marketing, Sales, Product (demos) | Sales, Product (trial), Onboarding | Product, Support, Customer Success | Customer Success, Marketing (case studies), Product (features) |
-
----
-
-### Analysis:
-**Top Pain Points:**
-1. **Consideration stage drop-off:** 100 demo requests → 50 trial signups (50% drop-off). Emotion: "Overwhelmed by options." → Action: Simplify comparison content, create interactive product tour.
-2. **Decision stage anxiety:** "Will setup take all weekend?" → Action: Highlight "Setup in under 30 minutes" in trial emails, improve setup wizard.
-3. **Service stage activation:** Only 70% activate → Action: Proactive support outreach at 24-hour mark, better onboarding videos.
-
-**Opportunities:**
-1. **Loyalty stage:** High NPS (50) but low referral rate (15%) → Action: Create formal referral program with incentives.
+| **Stage** | **Awareness** | **Consideration** | **Decision** |
+| **Customer Actions** | Sees LinkedIn ad | Compares on G2 | Starts free trial |
+| **Customer Experience** | Curious but skeptical | Overwhelmed | Anxious about setup |
 ```
-
-**Why this works:**
-- Persona is specific and relatable
-- Emotions are authentic (based on customer quotes)
-- KPIs are measurable and stage-appropriate
-- Pain points are identified with actionable fixes
-- Teams are clearly assigned
 
 ---
 
@@ -341,10 +310,10 @@ Review the map and ask:
 ## References
 
 ### Related Skills
-- `proto-persona.md` — Defines the persona for the journey map
-- `jobs-to-be-done.md` — Informs customer actions and goals
-- `problem-statement.md` — Identifies pain points at each stage
-- `user-story-mapping.md` — Complementary (story mapping focuses on product usage, journey mapping covers all touchpoints)
+- `skills/proto-persona/SKILL.md` — Defines the persona for the journey map
+- `skills/jobs-to-be-done/SKILL.md` — Informs customer actions and goals
+- `skills/problem-statement/SKILL.md` — Identifies pain points at each stage
+- `skills/user-story-mapping/SKILL.md` — Complementary (story mapping focuses on product usage, journey mapping covers all touchpoints)
 
 ### External Frameworks
 - NNGroup, *Customer Journey Mapping* (2016) — Foundational framework
@@ -354,9 +323,12 @@ Review the map and ask:
 ### Dean's Work
 - Customer Journey Mapping Prompt Template (adapted from NNGroup and CMU frameworks)
 
+### Provenance
+- Adapted from `prompts/customer-journey-mapping-prompt-template.md` in the `https://github.com/deanpeters/product-manager-prompts` repo.
+
 ---
 
 **Skill type:** Component
 **Suggested filename:** `customer-journey-map.md`
 **Suggested placement:** `/skills/components/`
-**Dependencies:** References `proto-persona.md`, `jobs-to-be-done.md`, `problem-statement.md`
+**Dependencies:** References `skills/proto-persona/SKILL.md`, `skills/jobs-to-be-done/SKILL.md`, `skills/problem-statement/SKILL.md`

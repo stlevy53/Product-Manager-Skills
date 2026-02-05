@@ -67,6 +67,10 @@ Details/Acceptance Criteria (at the bottom)
 
 This interactive skill asks **up to 5 adaptive questions**, offering **3-4 enumerated options** at each step.
 
+Use `template.md` for the facilitation agenda and outputs checklist.
+
+Interaction pattern: Pair with `skills/workshop-facilitation/SKILL.md` when you want a one-step-at-a-time flow with numbered recommendations each turn. If the user asks for a single-shot output, skip the multi-turn facilitation.
+
 ---
 
 ### Step 0: Gather Context (Before Questions)
@@ -308,7 +312,7 @@ After completing the flow, the agent outputs:
 
 ## Next Steps
 
-1. **Refine stories:** Use `user-story.md` to write detailed stories with acceptance criteria
+1. **Refine stories:** Use `skills/user-story/SKILL.md` to write detailed stories with acceptance criteria
 2. **Estimate effort:** Score stories (story points, t-shirt sizes)
 3. **Validate with stakeholders:** Walk through map left-to-right, confirm priorities
 4. **Display map:** Print/post as information radiator for ongoing reference
@@ -434,10 +438,10 @@ UI Layer → API Layer → Database Layer → Deployment
 ## References
 
 ### Related Skills
-- `user-story-mapping.md` — Component skill with story mapping template
-- `user-story.md` — Converts map tasks into detailed user stories
-- `proto-persona.md` — Defines users for mapping
-- `jobs-to-be-done.md` — Informs backbone activities
+- `skills/user-story-mapping/SKILL.md` — Component skill with story mapping template
+- `skills/user-story/SKILL.md` — Converts map tasks into detailed user stories
+- `skills/proto-persona/SKILL.md` — Defines users for mapping
+- `skills/jobs-to-be-done/SKILL.md` — Informs backbone activities
 
 ### External Frameworks
 - Jeff Patton, *User Story Mapping* (2014) — Origin of story mapping framework
@@ -446,9 +450,12 @@ UI Layer → API Layer → Database Layer → Deployment
 ### Dean's Work
 - [If Dean has story mapping resources, link here]
 
+### Provenance
+- Derived from `skills/user-story/SKILL.md`, `skills/user-story-splitting/SKILL.md`, and `skills/user-story-mapping/SKILL.md`.
+
 ---
 
 **Skill type:** Interactive
 **Suggested filename:** `user-story-mapping-workshop.md`
 **Suggested placement:** `/skills/interactive/`
-**Dependencies:** Uses `user-story-mapping.md`, `user-story.md`, `proto-persona.md`
+**Dependencies:** Uses `skills/user-story-mapping/SKILL.md`, `skills/user-story/SKILL.md`, `skills/proto-persona/SKILL.md`

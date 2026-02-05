@@ -71,6 +71,8 @@ Segment → Persona → Narrative (User's goal)
 
 ### Step 1: Define the Context
 
+Use `template.md` for the full fill-in structure.
+
 #### Segment
 Who are you building for?
 
@@ -85,7 +87,7 @@ Who are you building for?
 ---
 
 #### Persona
-Provide details about the persona within this segment (reference `proto-persona.md`).
+Provide details about the persona within this segment (reference `skills/proto-persona/SKILL.md`).
 
 ```markdown
 ### Persona:
@@ -98,7 +100,7 @@ Provide details about the persona within this segment (reference `proto-persona.
 ---
 
 ### Step 2: Define the Narrative
-What is the user trying to accomplish? Frame this as a Jobs-to-be-Done statement (reference `jobs-to-be-done.md`).
+What is the user trying to accomplish? Frame this as a Jobs-to-be-Done statement (reference `skills/jobs-to-be-done/SKILL.md`).
 
 ```markdown
 ### Narrative:
@@ -204,81 +206,7 @@ Review the map and ask:
 
 ## Examples
 
-### Example 1: Story Map for Freelance Invoicing Product
-
-```markdown
-## User Story Map: Freelance Invoicing
-
-### Who
-
-#### Segment:
-- Freelance creative professionals (designers, writers, photographers)
-
-#### Persona:
-- Sarah, 35, freelance graphic designer
-- Manages 5-10 clients at once
-- Struggles with invoicing, payment tracking, and follow-ups
-- Wants to spend less time on admin, more time designing
-- Currently uses Excel + email, which is error-prone and time-consuming
-
-### Backbone
-
-#### Narrative:
-- Complete a client project from kickoff to final payment without admin hassle
-
-#### Activities:
-1. Negotiate project scope and pricing
-2. Execute design work
-3. Deliver final assets
-4. Send invoice and receive payment
-5. Follow up on late payments
-
-### Steps:
-
-**For Activity 1: Negotiate project scope and pricing**
-- Step 1: Review client brief
-- Step 2: Draft project proposal
-- Step 3: Negotiate timeline and budget
-
-**For Activity 2: Execute design work**
-- Step 1: Create initial concepts
-- Step 2: Share concepts for feedback
-- Step 3: Iterate based on feedback
-- Step 4: Finalize design
-
-**For Activity 3: Deliver final assets**
-- Step 1: Export final files in client-requested formats
-- Step 2: Upload files to shared folder or email
-- Step 3: Confirm client receipt
-
-**For Activity 4: Send invoice and receive payment**
-- Step 1: Create invoice with project details
-- Step 2: Send invoice to client
-- Step 3: Track payment status
-- Step 4: Confirm payment received
-
-**For Activity 5: Follow up on late payments**
-- Step 1: Identify overdue invoices
-- Step 2: Send payment reminder
-- Step 3: Escalate if still unpaid
-
-### Tasks (Sample for Activity 4, Step 1: Create invoice):
-
-**MVP (Release 1):**
-- Task 1: Enter client name and contact info
-- Task 2: Add line items (description, hours, rate)
-- Task 3: Calculate total automatically
-- Task 4: Preview invoice before sending
-
-**Release 2:**
-- Task 5: Add logo and custom branding
-- Task 6: Save invoice templates for repeat clients
-- Task 7: Auto-populate line items from project notes
-
-**Future:**
-- Task 8: Generate invoices from time tracking data
-- Task 9: Multi-currency support
-```
+See `examples/sample.md` for a full story map example.
 
 ---
 
@@ -332,10 +260,10 @@ Review the map and ask:
 ## References
 
 ### Related Skills
-- `proto-persona.md` — Defines the persona for the story map
-- `jobs-to-be-done.md` — Informs the narrative and activities
-- `user-story.md` — Tasks from the map become user stories
-- `problem-statement.md` — Problem statement frames the narrative
+- `skills/proto-persona/SKILL.md` — Defines the persona for the story map
+- `skills/jobs-to-be-done/SKILL.md` — Informs the narrative and activities
+- `skills/user-story/SKILL.md` — Tasks from the map become user stories
+- `skills/problem-statement/SKILL.md` — Problem statement frames the narrative
 
 ### External Frameworks
 - Jeff Patton, *User Story Mapping* (2014) — Origin of the story mapping technique
@@ -344,9 +272,12 @@ Review the map and ask:
 ### Dean's Work
 - User Story Mapping Prompt (adapted from Jeff Patton's methodology)
 
+### Provenance
+- Adapted from `prompts/user-story-mapping.md` in the `https://github.com/deanpeters/product-manager-prompts` repo.
+
 ---
 
 **Skill type:** Component
 **Suggested filename:** `user-story-mapping.md`
 **Suggested placement:** `/skills/components/`
-**Dependencies:** References `proto-persona.md`, `jobs-to-be-done.md`, `user-story.md`, `problem-statement.md`
+**Dependencies:** References `skills/proto-persona/SKILL.md`, `skills/jobs-to-be-done/SKILL.md`, `skills/user-story/SKILL.md`, `skills/problem-statement/SKILL.md`

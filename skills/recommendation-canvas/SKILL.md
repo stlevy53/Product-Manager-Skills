@@ -55,10 +55,12 @@ Created for Dean Peters' Productside "AI Innovation for Product Managers" class,
 
 ## Application
 
+Use `template.md` for the full fill-in structure.
+
 ### Step 1: Gather Context
 Before filling out the canvas, ensure you have:
-- **Problem understanding:** User research, pain points (reference `problem-statement.md`)
-- **Persona clarity:** Who experiences the problem? (reference `proto-persona.md`)
+- **Problem understanding:** User research, pain points (reference `skills/problem-statement/SKILL.md`)
+- **Persona clarity:** Who experiences the problem? (reference `skills/proto-persona/SKILL.md`)
 - **Market context:** Competitive landscape, category positioning
 - **Business constraints:** Budget, timelines, strategic priorities
 
@@ -106,7 +108,7 @@ What's in it for the customer? Use this format:
 ---
 
 ### Step 3: Frame the Problem
-Use the problem framing narrative from `problem-statement.md`:
+Use the problem framing narrative from `skills/problem-statement/SKILL.md`:
 
 ```markdown
 ## The Problem Statement
@@ -126,7 +128,7 @@ Use the problem framing narrative from `problem-statement.md`:
 ### Step 4: Define the Solution Hypothesis
 
 #### Hypothesis Statement
-Use the epic hypothesis format from `epic-hypothesis.md`:
+Use the epic hypothesis format from `skills/epic-hypothesis/SKILL.md`:
 
 ```markdown
 ## Solution Hypothesis
@@ -174,7 +176,7 @@ Define validation measures:
 ---
 
 ### Step 5: Define Positioning
-Use the positioning statement format from `positioning-statement.md`:
+Use the positioning statement format from `skills/positioning-statement/SKILL.md`:
 
 ```markdown
 ## Positioning Statement
@@ -282,100 +284,19 @@ Use SMART metrics (Specific, Measurable, Attainable, Relevant, Time-Bound):
 
 ## Examples
 
-### Example 1: AI-Powered Invoice Reminder System (Good Canvas)
+See `examples/sample.md` for a full recommendation canvas example.
+
+Mini example excerpt:
 
 ```markdown
-## AI Invoice Reminder Canvas
-
-### Product Name
-- SmartReminders
-
 ### Business Outcome
-- Increase by 20% the monthly recurring revenue from freelance users within 12 months by reducing churn caused by payment frustration
-
-### Product Outcome
-- Reduce by 70% the time freelancers spend chasing late payments when using our invoicing platform
-
-### The Problem Statement
-Sarah is a freelance designer managing 10 clients at once. She spends 5+ hours per month manually tracking overdue invoices and sending follow-up emails. By the time she follows up, some clients have already forgotten or moved on, costing her revenue and damaging relationships. She feels anxious and frustrated, wishing she could focus on design instead of admin.
+- Increase by 20% MRR from freelance users within 12 months
 
 ### Solution Hypothesis
-
-**If we** provide AI-powered invoice reminders that auto-send at optimal times
-**for** freelance designers using our invoicing platform
-**Then we will** reduce time spent on payment follow-ups by 70% and increase on-time payment rates by 30%
-
-**Tiny Acts of Discovery:**
-- Prototype AI reminder system and test with 5 freelancers for 2 weeks
-- A/B test manual vs. AI-timed reminders with 20 users
-- Survey users on perceived value and trust in AI-generated messages
-
-**Proof-of-Life:**
-Within 4 weeks, we observe:
-- 80% of test users adopt AI reminders (quantitative)
-- 8 out of 10 users report saving 3+ hours/month (qualitative)
-- On-time payment rate increases by 20% (quantitative)
-
-### Positioning Statement
-
-**For** freelance creative professionals
-**that need** to reduce time spent chasing late payments without damaging client relationships
-SmartReminders
-**is an** AI-powered invoicing automation feature
-**that** automatically sends payment reminders at optimal times, increasing on-time payments by 30%
-
-**Unlike** manual reminder systems or generic email schedulers
-SmartReminders
-**provides** AI-optimized timing based on client behavior patterns, maximizing response rates without appearing pushy
-
-### Assumptions & Unknowns
-- **Assumption 1:** Users will trust AI to send messages on their behalf
-- **Assumption 2:** Optimal reminder timing improves payment rates
-- **Unknown 1:** Whether users prefer email, SMS, or in-app reminders
-- **Unknown 2:** How to handle clients who never respond to reminders
-
-### Issues/Risks to Investigate
-- **Political:** N/A (low risk)
-- **Economic:** Recession may reduce willingness to pay for premium features
-- **Social:** Users may perceive AI reminders as impersonal or spammy
-- **Technological:** AI model accuracy may degrade without retraining
-- **Environmental:** Minimal (low energy costs)
-- **Legal:** GDPR compliance for storing client email patterns and timing data
-
-### Issues/Risks to Monitor
-- **Political:** Future AI regulation
-- **Economic:** Currency fluctuations for international users
-- **Social:** Changing norms around automated business communication
-- **Technological:** Competitor AI models
-- **Environmental:** Carbon footprint concerns
-- **Legal:** Evolving data privacy laws
-
-### Value Justification
-
-**Is this Valuable?**
-- Absolutely yes
-
-**Solution Justification:**
-1. **Addresses top pain point:** Payment follow-ups are the #1 complaint from freelance users (per user research)
-2. **Differentiates from competitors:** Competitors offer manual reminders; we offer AI-optimized timing
-3. **Low technical risk:** Leverages existing AI infrastructure and user behavior data
-4. **High business impact:** Reducing churn by 20% = $500k ARR
-
-### Success Metrics
-1. **Adoption:** 75% of active invoicing users enable AI reminders within 3 months
-2. **Time savings:** Average time spent on payment follow-ups decreases by 60% within 6 months
-3. **Payment rates:** On-time payment rate increases from 50% to 65% within 6 months
-4. **NPS:** Net Promoter Score for invoicing feature increases from 6 to 8
-
-### What's Next
-1. **Run prototype test:** 2-week test with 10 beta users
-2. **Build lightweight AI model:** Optimize reminder timing based on client response patterns
-3. **Legal review:** GDPR compliance check
-4. **Present to execs:** Go/no-go decision by end of Q1
-5. **If validated:** Add to Q2 roadmap as high-priority feature
+**If we** provide AI-powered invoice reminders
+**for** freelance designers
+**Then we will** reduce time spent on follow-ups by 70%
 ```
-
----
 
 ## Common Pitfalls
 
@@ -427,11 +348,11 @@ SmartReminders
 ## References
 
 ### Related Skills
-- `problem-statement.md` — Informs the problem narrative
-- `epic-hypothesis.md` — Informs the solution hypothesis structure
-- `positioning-statement.md` — Informs positioning section
-- `proto-persona.md` — Defines target persona
-- `jobs-to-be-done.md` — Informs customer outcomes
+- `skills/problem-statement/SKILL.md` — Informs the problem narrative
+- `skills/epic-hypothesis/SKILL.md` — Informs the solution hypothesis structure
+- `skills/positioning-statement/SKILL.md` — Informs positioning section
+- `skills/proto-persona/SKILL.md` — Defines target persona
+- `skills/jobs-to-be-done/SKILL.md` — Informs customer outcomes
 
 ### External Frameworks
 - Osterwalder's Value Proposition Canvas — Influences problem/solution framing
@@ -441,9 +362,12 @@ SmartReminders
 ### Dean's Work
 - AI Recommendation Canvas Template (created for Productside "AI Innovation for Product Managers" class)
 
+### Provenance
+- Adapted from `prompts/recommendation-canvas-template.md` in the `https://github.com/deanpeters/product-manager-prompts` repo.
+
 ---
 
 **Skill type:** Component
 **Suggested filename:** `recommendation-canvas.md`
 **Suggested placement:** `/skills/components/`
-**Dependencies:** References `problem-statement.md`, `epic-hypothesis.md`, `positioning-statement.md`, `proto-persona.md`, `jobs-to-be-done.md`
+**Dependencies:** References `skills/problem-statement/SKILL.md`, `skills/epic-hypothesis/SKILL.md`, `skills/positioning-statement/SKILL.md`, `skills/proto-persona/SKILL.md`, `skills/jobs-to-be-done/SKILL.md`

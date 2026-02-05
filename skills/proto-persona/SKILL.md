@@ -55,13 +55,15 @@ A proto-persona is a lightweight, hypothesis-driven persona created from:
 
 ## Application
 
+Use `template.md` for the full fill-in structure.
+
 ### Step 1: Gather Available Context
 Before creating a proto-persona, collect:
 - **User research:** Interview notes, survey results, support tickets
 - **Analytics:** Usage data, demographics, behavioral patterns
 - **Market data:** Industry reports, competitor user bases
 - **Stakeholder insights:** Sales/support/CS teams who interact with users
-- **Product context:** What problem are you solving? (reference `problem-statement.md`)
+- **Product context:** What problem are you solving? (reference `skills/problem-statement/SKILL.md`)
 
 **If missing context:** Don't fabricate—note gaps and plan research to fill them.
 
@@ -135,7 +137,7 @@ Use real or representative quotes that reveal how they think and speak.
 ### Step 4: Document Their Context
 
 #### Pains
-What problems or frustrations does this persona experience? (Reference `jobs-to-be-done.md` for structure.)
+What problems or frustrations does this persona experience? (Reference `skills/jobs-to-be-done/SKILL.md` for structure.)
 
 ```markdown
 ### Pains
@@ -233,101 +235,17 @@ What beliefs and attitudes shape their decisions?
 
 ## Examples
 
-### Example 1: "Manager Mike" (Good Proto-Persona)
+See `examples/sample.md` for full proto-persona examples.
+
+Mini example excerpt:
 
 ```markdown
 ### Name
 - Manager Mike
 
-### Bio & Demographics
-- 35-42 years old, lives in urban/suburban areas (Chicago, Seattle, Austin)
-- Director of Product at mid-sized B2B SaaS companies (100-500 employees)
-- Married with 2 kids, commutes 30 min by car, values work-life balance
-- Active on LinkedIn and ProductHunt, attends 1-2 PM conferences per year
-- Reads PM blogs/newsletters (Lenny's, Stratechery), listens to podcasts
-- Plays rec basketball on weekends
-
 ### Quotes
 - "I spend more time in status meetings than actually building product."
-- "My CEO asks me for data I don't have, and it takes 3 days to get it from engineering."
-- "Every tool promises to save time, but they all require a week of onboarding."
-
-### Pains
-- Spends 10+ hours/week in status meetings and writing updates
-- No single source of truth for product metrics—data is scattered across tools
-- Pressure to ship faster, but team is stretched thin
-
-### What is This Person Trying to Accomplish?
-- Deliver roadmap milestones on time without burning out the team
-- Make data-driven prioritization decisions in real-time
-- Communicate progress to execs without manual reporting overhead
-
-### Goals
-- Be seen as a strategic thinker, not just a feature factory manager
-- Get promoted to VP of Product within 2 years
-- Spend more time with family (leave work by 6pm)
-
-### Attitudes & Influences
-- **Decision-Making Authority:** Can approve tools up to $15k/year; needs VP/CFO approval above that
-- **Decision Influencers:** Peer PMs in Slack communities, former colleagues, analyst reports (Gartner)
-- **Beliefs & Attitudes:**
-  - Skeptical of tools that require developer setup
-  - Values ease of use over feature depth
-  - Prefers tools that integrate with existing stack (Jira, Slack, Figma)
-  - Willing to pay more for great UX and support
 ```
-
-**Why this works:**
-- Specific demographics tied to behavior (not just "35-42")
-- Quotes reveal real frustrations (not generic platitudes)
-- Pains are measurable and specific
-- Goals include professional and personal motivations
-- Decision-making context is clear
-
----
-
-### Example 2: Bad Proto-Persona (Too Generic)
-
-```markdown
-### Name
-- John
-
-### Bio & Demographics
-- 30-50 years old
-- Lives somewhere
-- Works in tech
-
-### Quotes
-- "I want better tools."
-
-### Pains
-- Tools are bad
-
-### What is This Person Trying to Accomplish?
-- Use good software
-
-### Goals
-- Be productive
-
-### Attitudes & Influences
-- **Decision-Making Authority:** Maybe
-- **Decision Influencers:** People
-- **Beliefs & Attitudes:** Likes good things
-```
-
-**Why this fails:**
-- Age range is too broad (20-year span)
-- No behavioral context ("works in tech" = meaningless)
-- Quotes are generic ("better tools" = every persona ever)
-- Pains are vague ("tools are bad" = not actionable)
-- No specific goals or influences
-
-**How to fix it:**
-- Narrow demographics: "35-45, Director-level, B2B SaaS"
-- Add behavioral details: "Remote-first, active in PM communities"
-- Use real quotes: "I spend 5 hours/week chasing down status updates"
-- Specify pains: "No visibility into what engineering is building"
-- Define goals: "Get promoted to VP within 2 years"
 
 ---
 
@@ -381,10 +299,10 @@ What beliefs and attitudes shape their decisions?
 ## References
 
 ### Related Skills
-- `problem-statement.md` — Persona informs the "I am" section
-- `jobs-to-be-done.md` — JTBD informs persona pains/goals
-- `positioning-statement.md` — Persona is the "For [target]"
-- `user-story.md` — Stories use "As a [persona]"
+- `skills/problem-statement/SKILL.md` — Persona informs the "I am" section
+- `skills/jobs-to-be-done/SKILL.md` — JTBD informs persona pains/goals
+- `skills/positioning-statement/SKILL.md` — Persona is the "For [target]"
+- `skills/user-story/SKILL.md` — Stories use "As a [persona]"
 
 ### External Frameworks
 - Alan Cooper, *The Inmates Are Running the Asylum* (1998) — Origin of persona concept
@@ -394,10 +312,13 @@ What beliefs and attitudes shape their decisions?
 ### Dean's Work
 - Proto-Persona Profile Prompt (inspired by Productside Product Manager's Playbook)
 
+### Provenance
+- Adapted from `prompts/proto-persona-profile.md` in the `https://github.com/deanpeters/product-manager-prompts` repo.
+
 ---
 
 **Skill type:** Component
 **Suggested filename:** `proto-persona.md`
 **Suggested placement:** `/skills/components/`
-**Dependencies:** References `jobs-to-be-done.md`, `problem-statement.md`
-**Used by:** `positioning-statement.md`, `user-story.md`, `problem-statement.md`
+**Dependencies:** References `skills/jobs-to-be-done/SKILL.md`, `skills/problem-statement/SKILL.md`
+**Used by:** `skills/positioning-statement/SKILL.md`, `skills/user-story/SKILL.md`, `skills/problem-statement/SKILL.md`
