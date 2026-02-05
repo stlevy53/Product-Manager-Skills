@@ -45,26 +45,26 @@ Instead of saying *"Write a PRD"* and hoping for the best, the agent already kno
 These 29 skills are organized into **three types** that build on each other:
 
 ```text
-┌────────────────────────────────────────────────────────┐
-│  WORKFLOW SKILLS (4)                                   │
-│  Complete end-to-end PM processes                      │
-│  Example: "Run a product strategy session"            │
-│  Timeline: 2-4 weeks                                   │
-└────────────────────────────────────────────────────────┘
+┌───────────────────────────────────────────────────────────┐
+│  WORKFLOW SKILLS (4)                                      │
+│  Complete end-to-end PM processes                         │
+│  Example: "Run a product strategy session"                │
+│  Timeline: 2-4 weeks                                      │
+└───────────────────────────────────────────────────────────┘
                          ↓ orchestrates
-┌────────────────────────────────────────────────────────┐
-│  INTERACTIVE SKILLS (10)                               │
-│  Guided discovery with adaptive questions              │
-│  Example: "Which prioritization framework should I use?"│
-│  Timeline: 30-90 minutes                               │
-└────────────────────────────────────────────────────────┘
+┌───────────────────────────────────────────────────────────┐
+│  INTERACTIVE SKILLS (10)                                  │
+│  Guided discovery with adaptive questions                 │
+│  Example: "Which prioritization framework should I use?"  │
+│  Timeline: 30-90 minutes                                  │
+└───────────────────────────────────────────────────────────┘
                          ↓ uses
-┌────────────────────────────────────────────────────────┐
-│  COMPONENT SKILLS (15)                                 │
-│  Templates for specific PM deliverables               │
-│  Example: "Write a user story"                        │
-│  Timeline: 10-30 minutes                               │
-└────────────────────────────────────────────────────────┘
+┌───────────────────────────────────────────────────────────┐
+│  COMPONENT SKILLS (15)                                    │
+│  Templates for specific PM deliverables                   │
+│  Example: "Write a user story"                            │
+│  Timeline: 10-30 minutes                                  │
+└───────────────────────────────────────────────────────────┘
 ```
 
 ### Component Skills (15) — Templates & Artifacts
@@ -342,6 +342,6 @@ See [LICENSE](LICENSE) for full details.
 
 **v0.1 — February 2026**
 
-Built by Dean Peters (Principal Consultant and Trainer with Productside) with Anthropic Claude and OpenAI Codex.
+Built by Dean Peters (Principal Consultant and Trainer at Productside.com) with Anthropic Claude and OpenAI Codex.
 
 *Helping product managers work smarter with AI.*
