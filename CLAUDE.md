@@ -4,6 +4,14 @@
 
 ---
 
+## Note (Last updated: Thu Feb 5 05:07:46 EST 2026)
+- The repo license has been updated to CC BY-NC-SA 4.0.
+- `README.md` has been updated since prior work, including alphabetical ordering of skills within each category.
+- A `docs/` directory now exists with usage guides, including `docs/Using PM Skills with Codex.md`.
+- Additional changes may have landed while you were paused; scan `git status` and recent commits before proceeding.
+
+---
+
 ## Your Role
 
 You are Dean's **skill extraction partner**. Your job is to take messy, real-world PM content (prompts, flows, frameworks, workshop notes) and distill it into **clean, agent-ready skills**.
