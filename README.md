@@ -57,21 +57,21 @@ This is **executable PM knowledge** designed for AI agents to read and apply.
 
 | Skill | Use When You Need To... |
 |-------|-------------------------|
-| **positioning-statement** | Define who you serve, what problem you solve, and how you're different (Geoffrey Moore framework) |
-| **problem-statement** | Frame a customer problem with evidence before jumping to solutions |
-| **user-story** | Write user stories with proper acceptance criteria (Mike Cohn + Gherkin) |
-| **jobs-to-be-done** | Understand what customers are trying to accomplish (JTBD framework) |
-| **proto-persona** | Create hypothesis-driven personas before doing full research |
-| **epic-hypothesis** | Turn vague initiatives into testable hypotheses with success metrics |
-| **press-release** | Write a future press release to clarify product vision (Amazon Working Backwards) |
-| **user-story-splitting** | Break down large stories using 8 proven patterns |
-| **user-story-mapping** | Organize stories by user workflow (Jeff Patton framework) |
-| **recommendation-canvas** | Document AI-powered product recommendations |
-| **storyboard** | Visualize user journeys with 6-frame narrative storyboards |
-| **eol-message** | Communicate product/feature deprecation gracefully |
-| **customer-journey-map** | Map customer experience across all touchpoints (NNGroup framework) |
-| **pestel-analysis** | Analyze external factors (Political, Economic, Social, Tech, Environmental, Legal) |
-| **company-research** | Deep-dive competitor or company analysis |
+| **[positioning-statement](skills/components/positioning-statement.md)** | Define who you serve, what problem you solve, and how you're different (Geoffrey Moore framework) |
+| **[problem-statement](skills/components/problem-statement.md)** | Frame a customer problem with evidence before jumping to solutions |
+| **[user-story](skills/components/user-story.md)** | Write user stories with proper acceptance criteria (Mike Cohn + Gherkin) |
+| **[jobs-to-be-done](skills/components/jobs-to-be-done.md)** | Understand what customers are trying to accomplish (JTBD framework) |
+| **[proto-persona](skills/components/proto-persona.md)** | Create hypothesis-driven personas before doing full research |
+| **[epic-hypothesis](skills/components/epic-hypothesis.md)** | Turn vague initiatives into testable hypotheses with success metrics |
+| **[press-release](skills/components/press-release.md)** | Write a future press release to clarify product vision (Amazon Working Backwards) |
+| **[user-story-splitting](skills/components/user-story-splitting.md)** | Break down large stories using 8 proven patterns |
+| **[user-story-mapping](skills/components/user-story-mapping.md)** | Organize stories by user workflow (Jeff Patton framework) |
+| **[recommendation-canvas](skills/components/recommendation-canvas.md)** | Document AI-powered product recommendations |
+| **[storyboard](skills/components/storyboard.md)** | Visualize user journeys with 6-frame narrative storyboards |
+| **[eol-message](skills/components/eol-message.md)** | Communicate product/feature deprecation gracefully |
+| **[customer-journey-map](skills/components/customer-journey-map.md)** | Map customer experience across all touchpoints (NNGroup framework) |
+| **[pestel-analysis](skills/components/pestel-analysis.md)** | Analyze external factors (Political, Economic, Social, Tech, Environmental, Legal) |
+| **[company-research](skills/components/company-research.md)** | Deep-dive competitor or company analysis |
 
 ---
 
@@ -80,16 +80,16 @@ This is **executable PM knowledge** designed for AI agents to read and apply.
 
 | Skill | What It Does |
 |-------|--------------|
-| **positioning-workshop** | Guides you through defining your positioning with adaptive questions |
-| **discovery-interview-prep** | Plans customer interviews (Mom Test style) based on your research goals |
-| **prioritization-advisor** | Recommends the right prioritization framework (RICE, ICE, Kano, etc.) for your situation |
-| **tam-sam-som-calculator** | Projects market size (TAM/SAM/SOM) with real-world data and citations |
-| **epic-breakdown-advisor** | Splits epics into user stories using Richard Lawrence's 9 patterns |
-| **opportunity-solution-tree** | Generates opportunities and solutions, recommends best proof-of-concept to test |
-| **user-story-mapping-workshop** | Walks you through creating story maps with backbone and release slices |
-| **customer-journey-mapping-workshop** | Guides journey mapping with pain point identification |
-| **problem-framing-canvas** | Leads you through MITRE Problem Framing (Look Inward/Outward/Reframe) |
-| **lean-ux-canvas** | Sets up hypothesis-driven planning (Jeff Gothelf Lean UX Canvas v2) |
+| **[positioning-workshop](skills/interactive/positioning-workshop.md)** | Guides you through defining your positioning with adaptive questions |
+| **[discovery-interview-prep](skills/interactive/discovery-interview-prep.md)** | Plans customer interviews (Mom Test style) based on your research goals |
+| **[prioritization-advisor](skills/interactive/prioritization-advisor.md)** | Recommends the right prioritization framework (RICE, ICE, Kano, etc.) for your situation |
+| **[tam-sam-som-calculator](skills/interactive/tam-sam-som-calculator.md)** | Projects market size (TAM/SAM/SOM) with real-world data and citations |
+| **[epic-breakdown-advisor](skills/interactive/epic-breakdown-advisor-v2.md)** | Splits epics into user stories using Richard Lawrence's 9 patterns |
+| **[opportunity-solution-tree](skills/interactive/opportunity-solution-tree.md)** | Generates opportunities and solutions, recommends best proof-of-concept to test |
+| **[user-story-mapping-workshop](skills/interactive/user-story-mapping-workshop.md)** | Walks you through creating story maps with backbone and release slices |
+| **[customer-journey-mapping-workshop](skills/interactive/customer-journey-mapping-workshop.md)** | Guides journey mapping with pain point identification |
+| **[problem-framing-canvas](skills/interactive/problem-framing-canvas.md)** | Leads you through MITRE Problem Framing (Look Inward/Outward/Reframe) |
+| **[lean-ux-canvas](skills/interactive/lean-ux-canvas.md)** | Sets up hypothesis-driven planning (Jeff Gothelf Lean UX Canvas v2) |
 
 **How interactive skills work:**
 1. AI asks 3-5 questions about your context
@@ -120,10 +120,10 @@ AI: "Based on early PMF stage, I recommend RICE prioritization..."
 
 | Skill | What It Does | Timeline |
 |-------|--------------|----------|
-| **product-strategy-session** | Full strategy: positioning → problem framing → solution exploration → roadmap | 2-4 weeks |
-| **discovery-process** | Complete discovery cycle: frame problem → research → synthesize → validate solutions | 3-4 weeks |
-| **roadmap-planning** | Strategic roadmap: gather inputs → define epics → prioritize → sequence → communicate | 1-2 weeks |
-| **prd-development** | Structured PRD: problem statement → personas → solution → metrics → user stories | 2-4 days |
+| **[product-strategy-session](skills/workflows/product-strategy-session.md)** | Full strategy: positioning → problem framing → solution exploration → roadmap | 2-4 weeks |
+| **[discovery-process](skills/workflows/discovery-process.md)** | Complete discovery cycle: frame problem → research → synthesize → validate solutions | 3-4 weeks |
+| **[roadmap-planning](skills/workflows/roadmap-planning.md)** | Strategic roadmap: gather inputs → define epics → prioritize → sequence → communicate | 1-2 weeks |
+| **[prd-development](skills/workflows/prd-development.md)** | Structured PRD: problem statement → personas → solution → metrics → user stories | 2-4 days |
 
 **Workflow skills orchestrate everything:**
 - `product-strategy-session` references 15+ component and interactive skills
@@ -276,25 +276,25 @@ Skills build on each other:
 ## 💼 Real-World Use Cases
 
 ### "I need to align stakeholders on product strategy"
-→ **Workflow:** `product-strategy-session` (2-4 weeks, orchestrates positioning → roadmap)
+→ **Workflow:** [`product-strategy-session`](skills/workflows/product-strategy-session.md) (2-4 weeks, orchestrates positioning → roadmap)
 
 ### "I need to validate a customer problem before building"
-→ **Workflow:** `discovery-process` (3-4 weeks, interviews → synthesis → validation)
+→ **Workflow:** [`discovery-process`](skills/workflows/discovery-process.md) (3-4 weeks, interviews → synthesis → validation)
 
 ### "I need to write a PRD for a new feature"
-→ **Workflow:** `prd-development` (2-4 days, problem → solution → stories)
+→ **Workflow:** [`prd-development`](skills/workflows/prd-development.md) (2-4 days, problem → solution → stories)
 
 ### "I need to create a Q2 roadmap"
-→ **Workflow:** `roadmap-planning` (1-2 weeks, epics → prioritization → sequencing)
+→ **Workflow:** [`roadmap-planning`](skills/workflows/roadmap-planning.md) (1-2 weeks, epics → prioritization → sequencing)
 
 ### "I need to choose a prioritization framework"
-→ **Interactive:** `prioritization-advisor` (asks questions, recommends RICE/ICE/Kano)
+→ **Interactive:** [`prioritization-advisor`](skills/interactive/prioritization-advisor.md) (asks questions, recommends RICE/ICE/Kano)
 
 ### "I need to split a large epic"
-→ **Interactive:** `epic-breakdown-advisor` (Richard Lawrence's 9 patterns)
+→ **Interactive:** [`epic-breakdown-advisor`](skills/interactive/epic-breakdown-advisor-v2.md) (Richard Lawrence's 9 patterns)
 
 ### "I need to write a user story"
-→ **Component:** `user-story` (template + examples)
+→ **Component:** [`user-story`](skills/components/user-story.md) (template + examples)
 
 ---
 
