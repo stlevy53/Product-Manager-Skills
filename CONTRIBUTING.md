@@ -125,7 +125,7 @@ Before adding a new skill, determine which type it should be:
 - Focused on "how to create X well"
 - Includes template + quality criteria + examples + pitfalls
 
-**Where to save:** `/skills/components/`
+**Where to save:** `/skills/skill-name/SKILL.md` with `type: component` in frontmatter
 
 ---
 
@@ -142,7 +142,7 @@ Before adding a new skill, determine which type it should be:
 - Allows user to pick by number or provide custom input
 - Applies component skills at the end
 
-**Where to save:** `/skills/interactive/`
+**Where to save:** `/skills/skill-name/SKILL.md` with `type: interactive` in frontmatter
 
 ---
 
@@ -159,7 +159,7 @@ Before adding a new skill, determine which type it should be:
 - References component and interactive skills
 - Includes decision points ("If X, then do Y")
 
-**Where to save:** `/skills/workflows/`
+**Where to save:** `/skills/skill-name/SKILL.md` with `type: workflow` in frontmatter
 
 ---
 
@@ -168,7 +168,11 @@ Before adding a new skill, determine which type it should be:
 Every skill **must** follow this format:
 
 ~~~markdown
-# skill-name.md
+---
+name: skill-name
+description: Brief one-line description of what this skill does
+type: component
+---
 
 ## Purpose
 One paragraph: What this skill does and when to use it.
