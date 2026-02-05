@@ -24,7 +24,7 @@ This is **executable PM knowledge** designed to be read and applied by AI agents
 
 ## Why Skills > Prompts
 
-**Prompts** are instructions you give per-task.
+**Prompts** are instructions you give per-task.  
 **Skills** are reusable frameworks the agent learns once and applies across tasks.
 
 Example:
@@ -32,6 +32,25 @@ Example:
 - **Skill:** The agent already knows PRD structure, what questions to ask, how to handle ambiguity, and what good looks like
 
 Skills reduce repetition, improve consistency, and let you work at a higher level of abstraction.
+
+---
+
+## Three Types of Skills
+
+### Component Skills
+Individual building blocks — how to create specific PM artifacts like user stories, positioning statements, or PRD sections.
+
+**Example:** `user-story.md` teaches agents how to write proper user stories with acceptance criteria.
+
+### Workflow Skills
+Multi-step processes that orchestrate PM work — roadmap planning, discovery interviews, stakeholder analysis.
+
+**Example:** `roadmap-planning.md` guides agents through strategic roadmap development (referencing component skills like epics and OKRs).
+
+### Interactive Skills
+Conversational flows that gather context through questions, then offer smart, enumerated next-step recommendations.
+
+**Example:** `prioritization-advisor.md` asks about constraints and goals, then offers 3-5 tailored prioritization approaches you can select by number.
 
 ---
 
@@ -50,19 +69,27 @@ Each skill is a standalone `.md` file in `/skills/`. Load it into your agent's c
 ### 3. Reference It in Your Work
 Once loaded, reference the skill by name in your prompts:
 
-```
+~~~
 Using the Roadmap Planning skill, build a Q2 roadmap for our payments platform.
-```
+~~~
 
 The agent will apply the framework automatically.
+
+For interactive skills, just invoke them and answer the questions:
+
+~~~
+Run the Prioritization Advisor skill for our backlog.
+~~~
+
+The agent will guide you through the flow and offer context-aware options.
 
 ---
 
 ## Skill Structure
 
-Each skill follows this format:
+Each skill follows a standard format optimized for agent comprehension:
 
-```
+~~~
 # Skill Name
 
 ## Purpose
@@ -73,29 +100,34 @@ Core frameworks, definitions, and mental models.
 
 ## Application
 Step-by-step guidance for common scenarios.
+(Interactive skills include question sequences and decision trees)
 
 ## Examples
 Real-world cases showing the skill in action.
 
 ## Common Pitfalls
 What to avoid and why.
-```
+~~~
 
 Clean. Practical. Zero fluff.
 
 ---
 
-## Example of Future Skills
+## Examples of Future Skills
 
-| Skill | What It Does |
-|-------|--------------|
-| `roadmap-planning.md` | Strategic roadmap development and prioritization |
-| `prd-authoring.md` | Writing clear, decision-ready product requirements |
-| `stakeholder-mapping.md` | Identifying influence, interests, and communication strategies |
-| `discovery-interviews.md` | Running effective customer discovery and synthesis |
-| `metrics-frameworks.md` | Choosing and interpreting product metrics |
-| `market-research.md` | Capturing and distilling market and competitive signals |
-| *(more coming)* | |
+| Skill | Type | What It Does |
+|-------|------|--------------|
+| `user-story.md` | Component | Write user stories with proper acceptance criteria |
+| `positioning-statement.md` | Component | Craft compelling product positioning |
+| `epic.md` | Component | Structure and scope epics effectively |
+| `roadmap-planning.md` | Workflow | Strategic roadmap development and prioritization |
+| `discovery-interviews.md` | Workflow | Running effective customer discovery and synthesis |
+| `stakeholder-mapping.md` | Workflow | Identifying influence, interests, and communication strategies |
+| `prioritization-advisor.md` | Interactive | Context-aware prioritization framework selection |
+| `metrics-frameworks.md` | Interactive | Choosing and interpreting product metrics |
+| `market-research.md` | Workflow | Capturing and distilling market and competitive signals |
+| `prd-authoring.md` | Workflow | Writing clear, decision-ready product requirements |
+| *(more coming)* | | |
 
 ---
 
@@ -105,6 +137,7 @@ Found a gap? Have a battle-tested PM method you want formalized?
 
 **Open an issue** or **submit a PR** with:
 - Skill name
+- Skill type (component / workflow / interactive)
 - Use case (when would a PM need this?)
 - Your proposed framework (doesn't need to be polished)
 
