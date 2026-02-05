@@ -4,11 +4,59 @@
 
 ---
 
-## Note (Last updated: Thu Feb 5 05:07:46 EST 2026)
-- The repo license has been updated to CC BY-NC-SA 4.0.
-- `README.md` has been updated since prior work, including alphabetical ordering of skills within each category.
-- A `docs/` directory now exists with usage guides, including `docs/Using PM Skills with Codex.md`.
-- Additional changes may have landed while you were paused; scan `git status` and recent commits before proceeding.
+## Project Status (Last updated: Thu Feb 5 2026)
+
+### Current State: v0.1 Released + Phase 6 In Progress
+
+**Released: 34 Skills (Feb 2026)**
+- 16 Component Skills (templates/artifacts)
+- 14 Interactive Skills (guided discovery)
+- 4 Workflow Skills (end-to-end processes)
+- License: CC BY-NC-SA 4.0
+- All skills restructured to Anthropic-compliant format (`skills/skill-name/SKILL.md`)
+
+**Phase 6: AI PM Orchestrator Skills (In Progress)**
+- ✅ **Skill #34: agent-orchestration-advisor** (Interactive) — Complete
+  - Guides multi-agent workflow design
+  - Covers 4 dimensions: Multi-Agent Workflows, Cross-Functional AI Pods, Launch Control Tower, Strategic Intent Alignment
+  - References context-engineering-advisor as prerequisite
+- 📋 **Remaining Skills (Planned):**
+  - `ai-product-evals` (Component) — Evaluation frameworks template
+  - `ai-observability-framework` (Component) — Tracing and logging guide
+  - `ai-maintenance-planning` (Component) — Model drift maintenance template
+  - `ai-product-orchestrator` (Workflow) — Complete end-to-end AI PM process
+
+**Recent Updates:**
+- All skills alphabetically ordered within each category (Component, Interactive, Workflow)
+- Enhanced documentation in `/docs`:
+  - `Using PM Skills with Claude.md` — Comprehensive guide for Claude Code (CLI) and Claude Cowork (workspace)
+  - `Using PM Skills with Codex.md` — Guide for OpenAI Codex
+  - `Building PM Skills.md` — Contributor guide
+- Updated `CONTRIBUTING.md` with enhanced guidelines
+- Research documents added to `/research`:
+  - `Context Engineering for Product Managers.md`
+  - `The Product Manager as an Orchestrator.md`
+
+**Source Materials for Phase 6:**
+- Dean's Substack articles:
+  - "Vibe First, Validate Fast, Verify Fit" (PoL Probes)
+  - "AI-First Is Cute. AI-Shaped Is Survival." (5 competencies)
+  - "Context Stuffing Is Not Context Engineering"
+- Teresa Torres: *Continuous Discovery Habits* (5 AI PM disciplines)
+- Marty Cagan: *Empowered* (4 big risks in AI era)
+- Productside Blueprint: Orchestration framework
+
+**What's Next:**
+- Complete remaining Phase 6 skills (evals, observability, maintenance)
+- Build final workflow skill that orchestrates all 5 AI PM disciplines
+- Potential future: Additional AI PM skills based on emerging frameworks
+
+**Important Notes for Claude:**
+- Always check `git status` and recent commits before starting new work
+- Skills must follow standard anatomy: Purpose, Key Concepts, Application, Examples, Common Pitfalls, References
+- Interactive skills require 3-5 adaptive questions, enumerated options (3-5 choices), handle single/multi-selection
+- All skills include YAML frontmatter: `name`, `description`, `type`
+- Cross-reference related skills in References section
 
 ---
 
