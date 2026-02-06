@@ -1,6 +1,6 @@
 ---
 name: problem-framing-canvas
-description: Guide product managers through the MITRE Problem Framing Canvas process by asking structured questions across three phases: Look Inward (examine your own assumptions and biases), Look Outward (underst
+description: "Guide PMs through MITRE's Problem Framing Canvas with structured questions across Look Inward, Look Outward, and Reframe to produce a clear, bias-resistant problem statement."
 type: interactive
 ---
 

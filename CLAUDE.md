@@ -57,6 +57,9 @@
 - Interactive skills require 3-5 adaptive questions, enumerated options (3-5 choices), handle single/multi-selection
 - All skills include YAML frontmatter: `name`, `description`, `type`
 - Cross-reference related skills in References section
+- For Claude web custom skills: keep `name` <= 64 chars and `description` <= 200 chars, and ensure folder name matches `name`
+- Claude web uploads require `Skill.md` (case-sensitive); use `scripts/package-claude-skills.sh`
+- Scripts should be deterministic, avoid network calls, and be documented in the skill file
 
 ---
 

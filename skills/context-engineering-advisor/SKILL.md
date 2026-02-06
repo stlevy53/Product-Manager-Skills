@@ -1,6 +1,6 @@
 ---
 name: context-engineering-advisor
-description: Guide product managers through diagnosing context stuffing (volume without intent) vs. context engineering (structure for attention). Assess current context practices, identify boundaries, and provide tactical guidance on memory architecture, retrieval strategies, and the Research→Plan→Reset→Implement cycle.
+description: Diagnose context stuffing vs. context engineering. Assess practices, define boundaries, and advise on memory architecture, retrieval, and the Research→Plan→Reset→Implement cycle.
 type: interactive
 ---
 

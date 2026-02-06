@@ -115,6 +115,14 @@ For guidance on how to distill frameworks and source material into new skills, s
 
 ---
 
+## 🔒 Security, Safety, and Evaluation
+
+- Review any source material and scripts for unsafe or destructive actions. Skills should not request secrets or run risky commands.
+- If you add a script, place it in `skills/<skill-name>/scripts/`, keep it deterministic, avoid network calls, and document usage in the skill file.
+- Run a quick dry run using the skill questions or template and refine `name`, `description`, and steps until outputs are consistent and specific.
+
+---
+
 ## 🧩 Skill Types: Which One to Create?
 
 Before adding a new skill, determine which type it should be:
@@ -177,7 +185,7 @@ Every skill **must** follow this format:
 ~~~markdown
 ---
 name: skill-name
-description: Brief one-line description of what this skill does
+description: Brief one-line description of what this skill does (≤ 200 chars for Claude web uploads)
 type: component
 ---
 

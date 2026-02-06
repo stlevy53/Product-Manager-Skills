@@ -66,6 +66,16 @@ Before writing a story, ensure you have:
 
 ---
 
+### Optional Helper Script (Template Generator)
+
+If you want a consistent Markdown stub, you can generate one from CLI inputs. This script is deterministic and does not fetch data or write files.
+
+```bash
+python3 scripts/user-story-template.py --persona \"trial user\" --action \"log in with Google\" --outcome \"access the app without creating a new password\"
+```
+
+---
+
 ### Step 2: Write the Use Case
 
 Use `template.md` for the full fill-in structure.
@@ -227,6 +237,9 @@ Mini example excerpt:
 - `skills/proto-persona/SKILL.md` — Defines the "As a [persona]" section
 - `skills/problem-statement/SKILL.md` — Stories should address validated problems
 - `skills/epic-hypothesis/SKILL.md` — Epics decompose into user stories
+
+### Optional Helpers
+- `skills/user-story/scripts/user-story-template.py` — Deterministic Markdown stub generator (no network access)
 
 ### External Frameworks
 - Mike Cohn, *User Stories Applied* (2004) — Origin of the "As a / I want / so that" format

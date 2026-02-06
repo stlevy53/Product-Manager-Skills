@@ -1,6 +1,6 @@
 ---
 name: ai-shaped-readiness-advisor
-description: Assess whether your product work is "AI-first" (automating tasks) or "AI-shaped" (redesigning how you work). Evaluates maturity across 5 competencies—Context Design, Agent Orchestration, Outcome Acceleration, Team-AI Facilitation, Strategic Differentiation—then recommends which capability to build first.
+description: Assess whether your product work is AI-first or AI-shaped. Score 5 competencies and recommend the next capability to build.
 type: interactive
 ---
 

@@ -89,6 +89,16 @@ Before we begin, it's helpful to have product context. If available, please shar
 
 ---
 
+### Optional Helper Script (Deterministic Math)
+
+If you already have population and ARPU numbers (or a TAM estimate), you can run a deterministic helper to compute TAM/SAM/SOM and generate a Markdown table. This script does **not** fetch data or write files.
+
+```bash
+python3 scripts/market-sizing.py --population 5400000 --arpu 1000 --sam-share 30% --som-share 10%
+```
+
+---
+
 ### Question 1: Problem Space
 
 **Agent asks:**
@@ -342,6 +352,9 @@ Mini example excerpt:
 - `skills/positioning-statement/SKILL.md` — TAM/SAM/SOM informs "For [target]" segment size
 - `skills/problem-statement/SKILL.md` — Problem space defines the market
 - `skills/recommendation-canvas/SKILL.md` — Market sizing informs business outcome projections
+
+### Optional Helpers
+- `skills/tam-sam-som-calculator/scripts/market-sizing.py` — Deterministic TAM/SAM/SOM calculator (no network access)
 
 ### External Frameworks
 - Steve Blank, *The Four Steps to the Epiphany* (2005) — Market sizing for startups

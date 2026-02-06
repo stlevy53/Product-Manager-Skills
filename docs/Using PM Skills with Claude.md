@@ -72,6 +72,18 @@ You can install skills in Claude's global skills directory for access from any p
 
 Claude will automatically find skills in `~/.claude/skills/`.
 
+### Uploading as Custom Skills (Claude Web)
+
+The Claude web UI expects each skill folder to contain a `Skill.md` file (case-sensitive) and uses the frontmatter `name` and `description` fields for display. Descriptions must be 200 characters or fewer.
+
+This repo uses `SKILL.md`. Use the packaging helper to prepare upload-ready folders:
+
+```bash
+bash scripts/package-claude-skills.sh
+```
+
+The script creates `dist/claude-skills/<skill-name>/Skill.md` and copies `template.md`, `examples/`, and `scripts/` when present. Zip the individual skill folder you want to upload.
+
 ### Tips for Claude Code
 
 - **Be specific with context**: Supply goals, constraints, target users, and relevant background

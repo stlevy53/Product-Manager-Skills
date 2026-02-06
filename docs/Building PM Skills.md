@@ -39,7 +39,7 @@ Create a new folder in `skills/<skill-name>/SKILL.md` with lowercase kebab-case 
 ```markdown
 ---
 name: skill-name
-description: One-line description that includes when to use it
+description: One-line description that includes when to use it (≤ 200 chars for Claude web uploads)
 type: component
 ---
 
@@ -63,6 +63,14 @@ type: component
 - Include a clear example and an explicit anti-pattern.
 - Define jargon on first use.
 - Make tradeoffs explicit.
+- If you plan to upload to Claude web custom skills, keep `name` <= 64 chars and `description` <= 200 chars.
+
+## Optional Scripts (Deterministic Helpers)
+
+Some skills benefit from small deterministic helpers (calculators, template generators). If you add one:
+- Place it in `skills/<skill-name>/scripts/`.
+- Keep it deterministic (no network calls, no external dependencies).
+- Document usage in the skill file under Application.
 
 ## Example: Substack Post To Product Demo Skill
 

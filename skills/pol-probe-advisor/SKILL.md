@@ -1,6 +1,6 @@
 ---
 name: pol-probe-advisor
-description: Guide product managers through selecting the right Proof of Life (PoL) probe type based on their hypothesis, risk, and resources. Use this to match validation method to actual learning goal—not tooling comfort.
+description: Select the right Proof of Life (PoL) probe based on hypothesis, risk, and resources. Use this to match the validation method to the real learning goal, not tooling comfort.
 type: interactive
 ---
 

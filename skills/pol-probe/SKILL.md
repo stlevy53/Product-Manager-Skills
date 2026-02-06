@@ -1,6 +1,6 @@
 ---
 name: pol-probe
-description: Define and document a Proof of Life (PoL) probe—a lightweight, disposable validation artifact designed to surface harsh truths before expensive development. Use this to test hypotheses with minimal investment and maximum learning.
+description: Define a Proof of Life (PoL) probe—a lightweight validation artifact that surfaces harsh truths before expensive development. Use it to test hypotheses with minimal investment.
 type: component
 ---
 

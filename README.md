@@ -40,6 +40,34 @@ Instead of saying *"Write a PRD"* and hoping for the best, the agent already kno
 
 ---
 
+## ✅ Safety and Evaluation
+
+Before using any skill:
+- Review the skill file and any linked resources. If it includes `scripts/`, read them before running.
+- Prefer least privilege. Skills should not require secrets or network access unless explicitly documented.
+- Do a quick dry run with a realistic prompt, then refine `name` and `description` for better discoverability.
+
+---
+
+## 🧰 Optional Scripts (Deterministic Helpers)
+
+Some skills include a `scripts/` folder with deterministic helpers for calculations or formatting. These are optional, should be audited before running, and should avoid network calls or external dependencies.
+
+**Examples:**
+- `skills/tam-sam-som-calculator/scripts/market-sizing.py`
+- `skills/user-story/scripts/user-story-template.py`
+
+---
+
+## ✅ Claude Web Upload Checklist
+
+- Keep frontmatter `name` <= 64 chars and `description` <= 200 chars.
+- Ensure the skill folder name matches the `name` value.
+- Use `scripts/package-claude-skills.sh` to generate upload-ready `Skill.md` files.
+- Validate metadata with `scripts/check-skill-metadata.py`.
+
+---
+
 ## 🏗️ Three-Tier Architecture (How Skills Work Together)
 
 These 34 skills are organized into **three types** that build on each other:

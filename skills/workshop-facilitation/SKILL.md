@@ -1,6 +1,6 @@
 ---
 name: workshop-facilitation
-description: Facilitate workshop-style sessions in a multi-turn, one-step-at-a-time flow with numbered recommendations each turn. Use alongside workshop skills to guide choices and keep recommendations context-aware.
+description: Facilitate workshop sessions in a multi-turn, one-step flow with numbered recommendations each turn. Use alongside workshop skills to guide choices and keep advice context-aware.
 type: interactive
 ---
 
