@@ -2,6 +2,20 @@
 
 This guide explains how we turn real-world PM frameworks and source materials into agent-ready skills in this repo.
 
+## Two Approaches
+
+**1. Automated (Recommended for most use cases)**
+Use `scripts/add-a-skill.sh` to automatically convert raw PM content into formalized skills. The utility analyzes your content, suggests structure, generates files, validates metadata, and updates documentation.
+
+```bash
+./scripts/add-a-skill.sh research/your-framework.md
+```
+
+See [`Add-a-Skill Utility Guide.md`](Add-a-Skill%20Utility%20Guide.md) for complete guide.
+
+**2. Manual (This guide)**
+Follow the steps below to manually create skills when you need full control over structure and content, or when iterating on existing skills.
+
 ## What Counts As A Skill
 
 A skill is a reusable framework that produces a clear outcome and can be applied across companies or products.

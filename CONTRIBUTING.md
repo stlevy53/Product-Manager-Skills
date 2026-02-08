@@ -108,10 +108,38 @@ Not ready to write? That's fine—share ideas:
 
 ---
 
-## Using Codex (Optional)
+**Option 2: Use the Add-a-Skill Utility (Automated)**
+
+For faster skill creation, use the `add-a-skill.sh` utility to automatically generate skills from raw PM content:
+
+```bash
+# From a file
+./scripts/add-a-skill.sh research/your-framework.md
+
+# From clipboard
+pbpaste | ./scripts/add-a-skill.sh
+
+# Check available AI agents
+./scripts/add-a-skill.sh --list-agents
+```
+
+**What it does:**
+1. Analyzes your content and suggests skill types
+2. Generates complete skill files with proper structure
+3. Validates metadata for marketplace compliance
+4. Updates documentation automatically
+5. Stages files for git commit
+
+**Supported agents:** Claude Code, OpenAI Codex, Goose, Gemini
+
+**Learn more:** See [`docs/Add-a-Skill Utility Guide.md`](docs/Add-a-Skill%20Utility%20Guide.md)
+
+---
+
+## Using AI Agents (Optional)
 If you use OpenAI Codex while drafting or validating skills, open this repo in your Codex workspace and reference the skill file path directly (e.g., `skills/user-story/SKILL.md`). For a quick walkthrough, see [Using PM Skills with Codex](docs/Using%20PM%20Skills%20with%20Codex.md).
 
-For guidance on how to distill frameworks and source material into new skills, see [Building PM Skills](docs/Building%20PM%20Skills.md).
+For guidance on how to manually distill frameworks and source material into new skills, see [Building PM Skills](docs/Building%20PM%20Skills.md).
 
 ---
 

@@ -85,6 +85,14 @@
 - Claude web uploads require `Skill.md` (case-sensitive); use `scripts/package-claude-skills.sh`
 - Scripts should be deterministic, avoid network calls, and be documented in the skill file
 
+**Automation Tools:**
+- **`scripts/add-a-skill.sh`** — Agent-agnostic utility for automated skill creation
+  - Converts raw PM content into skills via 8-step workflow
+  - Supports Claude Code, Codex, Goose, Gemini (via adapters)
+  - Includes analysis, planning, generation, validation, and documentation steps
+  - See `docs/Add-a-Skill Utility Guide.md` for complete guide
+  - Use for semi-automated skill creation from research documents or workshop notes
+
 ---
 
 ## Your Role

@@ -59,6 +59,34 @@ Some skills include a `scripts/` folder with deterministic helpers for calculati
 
 ---
 
+## 🤖 Skill Creation Utility
+
+**Want to create your own skills?** Use `scripts/add-a-skill.sh` to automatically convert raw PM content into formalized skills.
+
+**What it does:**
+1. Analyzes your content and suggests skill types
+2. Generates complete skill files with examples
+3. Validates metadata for marketplace compliance
+4. Updates documentation automatically
+
+**Usage:**
+```bash
+# From a file
+./scripts/add-a-skill.sh research/your-framework.md
+
+# From clipboard
+pbpaste | ./scripts/add-a-skill.sh
+
+# Check available AI agents
+./scripts/add-a-skill.sh --list-agents
+```
+
+**Agent support:** Claude Code, OpenAI Codex, Goose, Gemini (via adapters)
+
+**Learn more:** See [`docs/Add-a-Skill Utility Guide.md`](docs/Add-a-Skill%20Utility%20Guide.md) for complete guide.
+
+---
+
 ## ✅ Claude Web Upload Checklist
 
 - Keep frontmatter `name` <= 64 chars and `description` <= 200 chars.
