@@ -72,17 +72,37 @@ You can install skills in Claude's global skills directory for access from any p
 
 Claude will automatically find skills in `~/.claude/skills/`.
 
-### Uploading as Custom Skills (Claude Web)
+<a id="github-zip-install"></a>
+### Installing from GitHub ZIP (Claude Desktop or Claude Web)
 
-The Claude web UI expects each skill folder to contain a `Skill.md` file (case-sensitive) and uses the frontmatter `name` and `description` fields for display. Descriptions must be 200 characters or fewer.
+Custom skills are uploaded manually. Claude does not continuously sync skills from a GitHub repo URL.
 
-This repo uses `SKILL.md`. Use the packaging helper to prepare upload-ready folders:
+The Claude Skills UI expects each uploaded skill to include a `Skill.md` file (case-sensitive). This repo stores source files as `SKILL.md`, so package first.
 
-```bash
-bash scripts/package-claude-skills.sh
-```
+1. **Download this repo from GitHub** (Code -> Download ZIP), then unzip it.
+2. **Prepare upload-ready skill folders**:
+   ```bash
+   bash scripts/package-claude-skills.sh
+   ```
+3. **Zip one packaged skill folder** (recommended one skill per ZIP):
+   ```bash
+   cd dist/claude-skills
+   zip -r user-story.zip user-story
+   ```
+4. **In Claude Desktop or Claude Web**:
+   - Go to **Settings -> Capabilities -> Skills**
+   - Click **Upload skill**
+   - Select the ZIP file
+5. **Enable the uploaded skill** and run a quick smoke test prompt.
 
-The script creates `dist/claude-skills/<skill-name>/Skill.md` and copies `template.md`, `examples/`, and `scripts/` when present. Zip the individual skill folder you want to upload.
+The packaging script creates `dist/claude-skills/<skill-name>/Skill.md` and copies `template.md`, `examples/`, and `scripts/` when present.
+
+### Advanced Option: MCP Integrations
+
+If you want deeper tool/repo integrations (instead of ZIP upload workflows), use MCP. This is a separate setup path from custom skill uploads.
+
+- Anthropic Help: [Using Skills in Claude](https://support.claude.com/en/articles/12512180-using-skills-in-claude)
+- Anthropic Docs: [Model Context Protocol (MCP)](https://docs.anthropic.com/en/docs/mcp)
 
 ### Tips for Claude Code
 

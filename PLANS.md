@@ -1,16 +1,24 @@
 # Product Manager Skills — Development Roadmap
 
-**Last Updated:** 2026-02-08
+**Last Updated:** 2026-02-09
 **Status:** Phase 1 COMPLETE ✅ | Phase 2 COMPLETE ✅ | Phase 3 COMPLETE ✅ | Phase 4 COMPLETE ✅ | Phase 5 COMPLETE ✅ | Phase 6 COMPLETE ✅ | Phase 7 COMPLETE ✅ | Phase 8 IN PROGRESS 🚧
-**Version:** v0.2 (Released February 8, 2026)
+**Version:** v0.3 (Released February 9, 2026)
 
 ---
 
-## 🎉 v0.2 Release Complete
+## 🎉 v0.3 Release
 
-All 41 skills complete and restructured to comply with Anthropic's official skills format.
+Current state: 42 skills with strict conformance checks and expanded onboarding documentation.
 
-**v0.2 additions:**
+**v0.3 additions:**
+- Added `skill-authoring-workflow` (workflow meta-skill for build/add/validate/doc update flow)
+- Added operational onboarding docs:
+  - `docs/Using PM Skills with ChatGPT.md`
+  - `docs/PM Skills Rule-of-Thumb Guide.md`
+  - `docs/PM Tooling Operations Charter.md`
+- Added clearer GitHub ZIP install guidance for Claude Desktop/Web
+
+**Foundation additions (Feb 8, 2026):**
 - Phase 7 Finance suite (7 new skills)
 - Automation tooling expansion: `add-a-skill`, `build-a-skill`, `find-a-skill`, `test-a-skill`
 - Stricter metadata and structure conformance enforcement

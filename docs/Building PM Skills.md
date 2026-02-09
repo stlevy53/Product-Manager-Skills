@@ -2,6 +2,27 @@
 
 This guide explains how we turn real-world PM frameworks and source materials into agent-ready skills in this repo.
 
+## Local Clone Quickstart
+
+For contributors working directly from a local clone:
+
+```bash
+# 1) Clone and enter repo
+git clone https://github.com/deanpeters/Product-Manager-Skills.git
+cd Product-Manager-Skills
+
+# 2) Build a skill (guided wizard)
+./scripts/build-a-skill.sh
+
+# 3) Or generate from source content
+./scripts/add-a-skill.sh research/your-framework.md
+
+# 4) Validate strict conformance
+./scripts/test-a-skill.sh --skill your-skill-name --smoke
+```
+
+Then update `README.md` catalog entries if you added a new skill.
+
 ## Three Approaches
 
 **1. Automated (Recommended for most use cases)**

@@ -1,35 +1,75 @@
 # Using PM Skills with Codex
 
-This repo is a library of PM skill files designed for AI agents. Codex can read these files directly from your workspace and follow them as structured instructions.
+Codex can apply these skills directly from your repo files. There are two practical paths:
+- Local workspace (Codex in your coding environment)
+- Codex on ChatGPT (`chatgpt.com/codex`) with GitHub connected
 
-## Quick Start
-1. Clone or open this repo in your Codex workspace.
-2. Pick a skill file from `skills/<skill-name>/SKILL.md`.
-3. Ask Codex to use the skill by referencing the file path.
+---
 
-Example prompt:
+## Option 1: Local Workspace (Fastest)
+
+1. Open this repo in your Codex workspace.
+2. Pick a skill file at `skills/<skill-name>/SKILL.md`.
+3. Prompt Codex with the explicit file path.
+
+Example:
 
 ```text
 Using the skill at skills/prd-development/SKILL.md, create a PRD for a mobile onboarding redesign. Ask up to 3 clarifying questions first, then proceed.
 ```
 
-## How to Apply Skills
-- **Component skills**: Use when you need a specific artifact (user story, positioning statement, epic hypothesis). Ask Codex to produce the artifact using the skill's template and quality criteria.
-- **Interactive skills**: Expect 3-5 questions, then numbered recommendations. Answer with a number (e.g., "2") or a combination ("1 & 3").
-- **Workflow skills**: These run multi-phase processes. Ask Codex to outline the phases first, then execute one phase at a time.
+### How to Apply Skill Types
 
-## Working with Multiple Skills
-You can chain skills explicitly:
+- **Component skills**: ask for a specific artifact (for example, user story, positioning statement, epic hypothesis).
+- **Interactive skills**: expect 3-5 adaptive questions, then numbered recommendations.
+- **Workflow skills**: ask Codex to outline phases, then execute one phase at a time.
+
+### Chain Multiple Skills
 
 ```text
 First use skills/problem-framing-canvas/SKILL.md to define the problem. Then apply skills/user-story/SKILL.md to write stories for the chosen solution.
 ```
 
-## Tips
-- Reference the skill file path explicitly to avoid ambiguity.
-- If Codex goes off-format, remind it to follow the skill sections (Purpose, Key Concepts, Application, Examples, Common Pitfalls, References).
-- Keep your context focused: supply goals, constraints, and target user details.
+---
+
+## Option 2: Codex on ChatGPT (GitHub-Connected)
+
+Codex on ChatGPT works against connected repos. No ZIP upload flow is required.
+Availability can vary by plan and rollout region.
+
+1. Open [Codex](https://chatgpt.com/codex).
+2. Connect GitHub when prompted (or via ChatGPT settings).
+3. Select this repo and branch.
+4. Prompt Codex to use a specific skill path, for example:
+
+```text
+Use skills/finance-based-pricing-advisor/SKILL.md to evaluate whether we should test a 10% price increase. Show assumptions and risks.
+```
+
+### Practical Prompt Pattern
+
+Use this structure to keep outputs consistent:
+
+```text
+Using skills/<skill-name>/SKILL.md:
+1) Ask up to 3 clarifying questions.
+2) Follow the skill sections exactly.
+3) Show output in markdown.
+4) End with risks, assumptions, and next steps.
+```
+
+---
 
 ## Troubleshooting
-- **Codex says it cannot find a file**: Confirm the repo is open and the path is correct.
-- **Output is generic**: Provide more specific constraints and examples, or ask Codex to ask clarifying questions before drafting.
+
+- **Codex cannot find the file**: confirm repo/branch selection and exact case-sensitive path.
+- **Output is generic**: provide real constraints (stage, KPI target, customer segment, timeline).
+- **Format drift**: explicitly instruct Codex to follow `Purpose, Key Concepts, Application, Examples, Common Pitfalls, References`.
+
+---
+
+## Official References
+
+- [Codex in ChatGPT](https://openai.com/index/introducing-codex/)
+- [Getting started with Codex](https://help.openai.com/en/articles/11096431-getting-started-with-codex)
+- [Apps in ChatGPT (GitHub connection)](https://help.openai.com/en/articles/11487775-connectors-in-chatgpt/)

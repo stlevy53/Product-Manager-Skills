@@ -4,14 +4,14 @@
 
 ---
 
-## Project Status (Last updated: Sat Feb 8 2026)
+## Project Status (Last updated: Sun Feb 9 2026)
 
-### Current State: v0.2 Released + Multiple Active Phases
+### Current State: v0.3 Released + Multiple Active Phases
 
-**Released: 41 Skills (Feb 8, 2026)**
+**Released: 42 Skills (Feb 9, 2026)**
 - 19 Component Skills (templates/artifacts + finance metrics)
 - 18 Interactive Skills (guided discovery + finance advisors)
-- 4 Workflow Skills (end-to-end processes)
+- 5 Workflow Skills (end-to-end processes + meta skill-authoring workflow)
 - License: CC BY-NC-SA 4.0
 - All skills restructured to Anthropic-compliant format (`skills/skill-name/SKILL.md`)
 

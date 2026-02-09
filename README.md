@@ -11,10 +11,10 @@
 ║   ██║     ██║ ╚═╝ ██║    ███████║██║  ██╗██║███████╗███████╗███████║
 ║   ╚═╝     ╚═╝     ╚═╝    ╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚══════╝
 ║                                                                    ║
-║   41 battle-tested frameworks for AI agents                        ║
+║   42 battle-tested frameworks for AI agents                        ║
 ║   Claude Code • Cowork • Codex • ChatGPT • Gemini                  ║
 ║                                                                    ║
-║   v0.2 • Feb 8, 2026 • CC BY-NC-SA 4.0                             ║
+║   v0.3 • Feb 9, 2026 • CC BY-NC-SA 4.0                             ║
 ╚════════════════════════════════════════════════════════════════════╝
 ```
 
@@ -43,7 +43,7 @@ Still rewriting PM prompts and getting generic AI output? I built a reusable PM 
 
 ## 🎯 What This Is
 
-**41 ready-to-use PM frameworks** that teach AI agents how to do product management work professionally—without you having to explain your process every time.
+**42 ready-to-use PM frameworks** that teach AI agents how to do product management work professionally—without you having to explain your process every time.
 
 Instead of saying *"Write a PRD"* and hoping for the best, the agent already knows:
 - ✅ How to structure a PRD
@@ -116,6 +116,7 @@ pbpaste | ./scripts/add-a-skill.sh
 **Agent support:** Claude Code, Manual mode (works with any CLI), and custom adapters via `scripts/adapters/ADAPTER_TEMPLATE.sh`
 
 **Learn more:** See [`docs/Add-a-Skill Utility Guide.md`](docs/Add-a-Skill%20Utility%20Guide.md) for complete guide.
+**Cloning locally?** Start with [`docs/Building PM Skills.md#local-clone-quickstart`](docs/Building%20PM%20Skills.md#local-clone-quickstart).
 
 ---
 
@@ -125,16 +126,17 @@ pbpaste | ./scripts/add-a-skill.sh
 - Ensure the skill folder name matches the `name` value.
 - Use `scripts/package-claude-skills.sh` to generate upload-ready `Skill.md` files.
 - Validate metadata with `scripts/check-skill-metadata.py`.
+- For GitHub ZIP upload flow, see [`docs/Using PM Skills with Claude.md`](docs/Using%20PM%20Skills%20with%20Claude.md#github-zip-install).
 
 ---
 
 ## 🏗️ Three-Tier Architecture (How Skills Work Together)
 
-These 41 skills are organized into **three types** that build on each other:
+These 42 skills are organized into **three types** that build on each other:
 
 ```text
 ┌───────────────────────────────────────────────────────────┐
-│  WORKFLOW SKILLS (4)                                      │
+│  WORKFLOW SKILLS (5)                                      │
 │  Complete end-to-end PM processes                         │
 │  Example: "Run a product strategy session"                │
 │  Timeline: 2-4 weeks                                      │
@@ -180,7 +182,7 @@ These 41 skills are organized into **three types** that build on each other:
 
 ---
 
-### Workflow Skills (4) — End-to-End Processes
+### Workflow Skills (5) — End-to-End Processes
 **What:** Complete PM processes that orchestrate multiple component and interactive skills over days/weeks.
 
 **When to use:** You need to run a full PM workflow from start to finish (strategy session, discovery cycle, roadmap planning, PRD creation).
@@ -189,7 +191,7 @@ These 41 skills are organized into **three types** that build on each other:
 
 ---
 
-## 📦 All 41 Skills (Clickable)
+## 📦 All 42 Skills (Clickable)
 
 Now that you understand the three types, here's the complete catalog:
 
@@ -245,7 +247,7 @@ Now that you understand the three types, here's the complete catalog:
 
 ---
 
-### 🎭 Workflow Skills (4)
+### 🎭 Workflow Skills (5)
 
 | Skill | What It Does | Timeline |
 |-------|--------------|----------|
@@ -253,6 +255,7 @@ Now that you understand the three types, here's the complete catalog:
 | **[prd-development](skills/prd-development/SKILL.md)** | Structured PRD: problem statement → personas → solution → metrics → user stories | 2-4 days |
 | **[product-strategy-session](skills/product-strategy-session/SKILL.md)** | Full strategy: positioning → problem framing → solution exploration → roadmap | 2-4 weeks |
 | **[roadmap-planning](skills/roadmap-planning/SKILL.md)** | Strategic roadmap: gather inputs → define epics → prioritize → sequence → communicate | 1-2 weeks |
+| **[skill-authoring-workflow](skills/skill-authoring-workflow/SKILL.md)** | Meta workflow: choose add/build path → validate conformance → update docs → package/publish | 30-90 minutes |
 
 <a id="future-skills"></a>
 ### 🔮 Agent Skills of the Future
@@ -272,6 +275,8 @@ Detailed concept notes live in [`PLANS.md`](PLANS.md#future-skill-candidates).
 
 ## 🚀 How to Use
 
+**Confused by setup options?** Start here: [PM Skills Rule-of-Thumb Guide](docs/PM%20Skills%20Rule-of-Thumb%20Guide.md).
+
 ### With Claude Desktop or Claude.ai
 
 1. Open a conversation with Claude
@@ -285,24 +290,29 @@ cd product-manager-skills
 claude "Using the PRD Development workflow, create a PRD for our mobile feature"
 ```
 
-### With OpenAI Codex, Cowork, or Other Agents
+### With OpenAI Codex
 
-**Codex:** Load skill files into your workspace, reference by name. See [Using PM Skills with Codex](docs/Using%20PM%20Skills%20with%20Codex.md).
-**Cowork:** Import skills as knowledge modules, invoke via natural language
-**Other agents:** Follow your agent's docs for loading custom knowledge
+Use either local workspace paths or GitHub-connected Codex on ChatGPT. See [Using PM Skills with Codex](docs/Using%20PM%20Skills%20with%20Codex.md).
 
-### With ChatGPT, Gemini, or Any AI Chat
+### With ChatGPT
 
-1. Open the skill file (e.g., `skills/user-story/SKILL.md`)
-2. Copy the contents
-3. Paste into ChatGPT/Gemini
-4. Ask: "Using this framework, write user stories for my feature"
+Use GitHub app connections (formerly connectors), Custom GPT Knowledge uploads, or Project files. See [Using PM Skills with ChatGPT](docs/Using%20PM%20Skills%20with%20ChatGPT.md).
+
+### With Cowork or Other Agents
+
+**Cowork:** Import skills as knowledge modules, invoke via natural language.
+**Other agents:** Follow your agent's docs for loading custom knowledge.
 
 ---
 
 ## 📄 Docs
 
-- **[Using PM Skills with Codex](docs/Using%20PM%20Skills%20with%20Codex.md)** — How to apply these skills in the Codex workspace.
+- **[Using PM Skills with Claude](docs/Using%20PM%20Skills%20with%20Claude.md)** — Claude Code usage plus GitHub ZIP upload steps for Claude Desktop/Web.
+- **[Using PM Skills with Codex](docs/Using%20PM%20Skills%20with%20Codex.md)** — Local workspace usage plus GitHub-connected Codex on ChatGPT.
+- **[Using PM Skills with ChatGPT](docs/Using%20PM%20Skills%20with%20ChatGPT.md)** — GitHub app connection, Custom GPT Knowledge setup, and Project-based usage.
+- **[PM Skills Rule-of-Thumb Guide](docs/PM%20Skills%20Rule-of-Thumb%20Guide.md)** — Non-technical setup choices (local repo vs ZIP vs app connections) in plain English.
+- **[PM Tooling Operations Charter](docs/PM%20Tooling%20Operations%20Charter.md)** — Pedagogic operating stack across M365 Copilot, Codex, ChatGPT, VS Code/Copilot, Cursor, n8n, and Lovable.
+- **[Add-a-Skill Utility Guide](docs/Add-a-Skill%20Utility%20Guide.md)** — End-to-end automation guide for generating and validating new skills.
 - **[Building PM Skills](docs/Building%20PM%20Skills.md)** — How we distill sources into agent-ready PM skills.
 
 ---
@@ -451,12 +461,12 @@ See [LICENSE](LICENSE) for full details.
 
 ---
 
-**v0.2 — February 8, 2026**
+**v0.3 — February 9, 2026**
 
 Highlights in this release:
-- 41 total skills, including Phase 7 finance skills
+- 42 total skills, including Phase 7 finance skills and the new `skill-authoring-workflow`
 - New skill tooling: `add-a-skill`, `build-a-skill`, `find-a-skill`, `test-a-skill`
-- Stricter skill conformance validation and documentation updates
+- New onboarding docs for Claude, Codex, ChatGPT, and non-technical "rule-of-thumb" setup
 
 Built by Dean Peters (Principal Consultant and Trainer at Productside.com) with Anthropic Claude and OpenAI Codex.
 
